@@ -1,2 +1,2 @@
 # DNPM-on-FHIR
-German Network for Personalized Medicine (DNPM) Dataset Implementation Guide
+German Network for Personalized Medicine (DNPM) MTB Dataset Implementation Guide
