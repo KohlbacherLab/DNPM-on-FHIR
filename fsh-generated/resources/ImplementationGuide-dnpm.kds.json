@@ -1,0 +1,90 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "dnpm.kds",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ImplementationGuide/dnpm.kds",
+  "version": "0.1.0",
+  "name": "DNPMonFHIR",
+  "status": "draft",
+  "publisher": "TBI-UKT",
+  "contact": [
+    {
+      "name": "TBI-UKT",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://kohlbacherlab.org"
+        }
+      ]
+    }
+  ],
+  "packageId": "dnpm.kds",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/consent"
+        },
+        "name": "Consent",
+        "description": "Category: LOINC 59284-0",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/family-member-history"
+        },
+        "name": "Family Member History",
+        "description": "TBA",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mtb-episode"
+        },
+        "name": "Episode of Care",
+        "description": "TBA",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mtb-patient"
+        },
+        "name": "MTB Patient",
+        "description": "A psydonomized MTB Patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/onco-diagnosis"
+        },
+        "name": "Onco Diagnosis",
+        "description": "An oncological Diagnosis object",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
