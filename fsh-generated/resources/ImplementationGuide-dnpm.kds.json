@@ -25,9 +25,9 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/consent"
+          "reference": "StructureDefinition/dnpm-consent"
         },
-        "name": "Consent",
+        "name": "DNPM Consent",
         "description": "Category: LOINC 59284-0",
         "exampleBoolean": false
       },
