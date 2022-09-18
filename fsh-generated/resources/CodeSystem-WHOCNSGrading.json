@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "WHOCNSGrading",
+  "id": "WHOCNSGrading",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading",
+  "concept": [
+    {
+      "code": "I",
+      "display": "Pilocytic astrocytoma"
+    },
+    {
+      "code": "II",
+      "display": "Diffuse astrocytoma"
+    },
+    {
+      "code": "III",
+      "display": "Anaplastic astrocytoma"
+    },
+    {
+      "code": "IV",
+      "display": "Glioblastoma"
+    }
+  ],
+  "count": 4
+}

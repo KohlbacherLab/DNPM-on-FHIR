@@ -13,7 +13,7 @@
   ],
   "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-patient",
   "version": "0.1.0",
-  "name": "MTB_Patient",
+  "name": "MTBPatient",
   "title": "MTB Patient",
   "status": "active",
   "description": "A psydonomized MTB Patient",
@@ -64,9 +64,8 @@
         "min": 1
       },
       {
-        "id": "Patient.deceased[x]:deceasedDateTime",
-        "path": "Patient.deceased[x]",
-        "sliceName": "deceasedDateTime",
+        "id": "Patient.deceasedDateTime",
+        "path": "Patient.deceasedDateTime",
         "min": 0,
         "max": "1",
         "type": [

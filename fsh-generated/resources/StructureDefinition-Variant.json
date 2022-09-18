@@ -1,20 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "dnpm-consent",
+  "id": "Variant",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Foundation.Security"
+      "valueString": "Clinical.Diagnostics"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode": "patient"
     }
   ],
-  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/dnpm-consent",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/Variant",
   "version": "0.1.0",
-  "name": "DNPMConsent",
-  "title": "DNPM Consent",
+  "name": "Variant",
   "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -22,6 +21,11 @@
       "identity": "workflow",
       "uri": "http://hl7.org/fhir/workflow",
       "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
     },
     {
       "identity": "v2",
@@ -37,24 +41,28 @@
       "identity": "w5",
       "uri": "http://hl7.org/fhir/fivews",
       "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
     }
   ],
   "kind": "resource",
   "abstract": false,
-  "type": "Consent",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Consent",
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Consent.identifier",
-        "path": "Consent.identifier",
-        "min": 1,
-        "max": "1"
+        "id": "Observation.id",
+        "path": "Observation.id",
+        "min": 1
       },
       {
-        "id": "Consent.category.coding",
-        "path": "Consent.category.coding",
+        "id": "Observation.component",
+        "path": "Observation.component",
         "slicing": {
           "discriminator": [
             {
@@ -63,26 +71,7 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Consent.category.coding:loinc",
-        "path": "Consent.category.coding",
-        "sliceName": "loinc",
-        "min": 1,
-        "max": "*"
-      },
-      {
-        "id": "Consent.category.coding:loinc.code",
-        "path": "Consent.category.coding.code",
-        "min": 1,
-        "patternCode": "59284-0"
-      },
-      {
-        "id": "Consent.patient",
-        "path": "Consent.patient",
-        "min": 1
+        }
       }
     ]
   }

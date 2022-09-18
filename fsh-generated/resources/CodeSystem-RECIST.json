@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "RECIST",
+  "id": "RECIST",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST",
+  "concept": [
+    {
+      "code": "CR",
+      "display": "Complete Response"
+    },
+    {
+      "code": "PR",
+      "display": "Partial Response"
+    },
+    {
+      "code": "MR",
+      "display": "Mixed Response"
+    },
+    {
+      "code": "SD",
+      "display": "Stable Disease"
+    },
+    {
+      "code": "PD",
+      "display": "Progressive Disease"
+    },
+    {
+      "code": "NA",
+      "display": "Not Assessable"
+    },
+    {
+      "code": "NYA",
+      "display": "Not Yet Assessable"
+    }
+  ],
+  "count": 7
+}

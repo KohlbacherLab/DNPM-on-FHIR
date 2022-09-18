@@ -1,0 +1,74 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "LastGuidelineTherapy",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/LastGuidelineTherapy",
+  "version": "0.1.0",
+  "name": "LastGuidelineTherapy",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTherapy",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement.statusReason",
+        "path": "MedicationStatement.statusReason",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TherapyStopReasonVS"
+        }
+      },
+      {
+        "id": "MedicationStatement.effectivePeriod",
+        "path": "MedicationStatement.effectivePeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "MedicationStatement.effectivePeriod.start",
+        "path": "MedicationStatement.effectivePeriod.start",
+        "min": 1
+      }
+    ]
+  }
+}

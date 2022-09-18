@@ -1,0 +1,178 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SomaticNGSReport",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/SomaticNGSReport",
+  "version": "0.1.0",
+  "name": "SomaticNGSReport",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.contained",
+        "path": "DiagnosticReport.contained",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DiagnosticReport.contained:simpleVariant",
+        "path": "DiagnosticReport.contained",
+        "sliceName": "simpleVariant",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/SimpleVariant"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.contained:cnv",
+        "path": "DiagnosticReport.contained",
+        "sliceName": "cnv",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/CopyNumberVariant"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.contained:rnaSeq",
+        "path": "DiagnosticReport.contained",
+        "sliceName": "rnaSeq",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/RNASeq"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "DiagnosticReport.extension:sequencingType",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "sequencingType",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/SequentingType"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.extension:metaData",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "metaData",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/Metadata"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.identifier",
+        "path": "DiagnosticReport.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.specimen",
+        "path": "DiagnosticReport.specimen",
+        "min": 1,
+        "max": "1"
+      }
+    ]
+  }
+}

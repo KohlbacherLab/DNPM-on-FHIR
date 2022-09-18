@@ -1,0 +1,316 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RNASeq",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/RNASeq",
+  "version": "0.1.0",
+  "name": "RNASeq",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/Variant",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "copy-number-variant",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "min": 6
+      },
+      {
+        "id": "Observation.component:gene-studied",
+        "path": "Observation.component",
+        "sliceName": "gene-studied",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:gene-studied.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "48018-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:gene-studied.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GeneCoding"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:transcriptId",
+        "path": "Observation.component",
+        "sliceName": "transcriptId",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:transcriptId.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "transcript-id",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:transcriptId.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:fragmentsPerKbMillion",
+        "path": "Observation.component",
+        "sliceName": "fragmentsPerKbMillion",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:fragmentsPerKbMillion.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "fragments-per-kb-million",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:fragmentsPerKbMillion.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:fromNgs",
+        "path": "Observation.component",
+        "sliceName": "fromNgs",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:fromNgs.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "identified-from-ngs",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:fromNgs.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:tissueCorrectedExpression",
+        "path": "Observation.component",
+        "sliceName": "tissueCorrectedExpression",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:tissueCorrectedExpression.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "tissue-corrected-expression",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:tissueCorrectedExpression.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:rawCounts",
+        "path": "Observation.component",
+        "sliceName": "rawCounts",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rawCounts.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "raw-counts",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:rawCounts.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:librarySize",
+        "path": "Observation.component",
+        "sliceName": "librarySize",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:librarySize.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "library-size",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:librarySize.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:cohortRanking",
+        "path": "Observation.component",
+        "sliceName": "cohortRanking",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cohortRanking.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "cohort-ranking",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:cohortRanking.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

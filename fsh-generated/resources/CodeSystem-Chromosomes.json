@@ -1,0 +1,84 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Chromosomes",
+  "id": "Chromosomes",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/Chromosomes",
+  "concept": [
+    {
+      "code": "chr1"
+    },
+    {
+      "code": "chr2"
+    },
+    {
+      "code": "chr3"
+    },
+    {
+      "code": "chr4"
+    },
+    {
+      "code": "chr5"
+    },
+    {
+      "code": "chr6"
+    },
+    {
+      "code": "chr7"
+    },
+    {
+      "code": "chr8"
+    },
+    {
+      "code": "chr9"
+    },
+    {
+      "code": "chr10"
+    },
+    {
+      "code": "chr11"
+    },
+    {
+      "code": "chr12"
+    },
+    {
+      "code": "chr13"
+    },
+    {
+      "code": "chr14"
+    },
+    {
+      "code": "chr15"
+    },
+    {
+      "code": "chr16"
+    },
+    {
+      "code": "chr17"
+    },
+    {
+      "code": "chr18"
+    },
+    {
+      "code": "chr19"
+    },
+    {
+      "code": "chr20"
+    },
+    {
+      "code": "chr21"
+    },
+    {
+      "code": "chr22"
+    },
+    {
+      "code": "chrX"
+    },
+    {
+      "code": "chrY"
+    }
+  ],
+  "count": 24
+}

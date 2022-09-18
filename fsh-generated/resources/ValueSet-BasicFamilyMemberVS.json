@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BasicFamilyMemberVS",
+  "id": "BasicFamilyMemberVS",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/BasicFamilyMemberVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "concept": [
+          {
+            "code": "FAMMEMB"
+          },
+          {
+            "code": "EXT"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "GeneCoding",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GeneCoding",
+  "version": "0.1.0",
+  "name": "GeneCoding",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "orim",
+      "uri": "http://hl7.org/orim",
+      "name": "Ontological RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "CodeableConcept",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CodeableConcept",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CodeableConcept.coding",
+        "path": "CodeableConcept.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "CodeableConcept.coding:hgncId",
+        "path": "CodeableConcept.coding",
+        "sliceName": "hgncId",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.genenames.org/"
+        }
+      },
+      {
+        "id": "CodeableConcept.coding:ensemblId",
+        "path": "CodeableConcept.coding",
+        "sliceName": "ensemblId",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.ensembl.org"
+        }
+      }
+    ]
+  }
+}

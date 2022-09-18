@@ -1,28 +1,31 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "family-member-history",
+  "id": "BasicObservation",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Summary"
+      "valueString": "Clinical.Diagnostics"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode": "patient"
     }
   ],
-  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/family-member-history",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/BasicObservation",
   "version": "0.1.0",
-  "name": "Family_Member_History",
-  "title": "Family Member History",
+  "name": "BasicObservation",
   "status": "active",
-  "description": "TBA",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
       "identity": "workflow",
       "uri": "http://hl7.org/fhir/workflow",
       "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
     },
     {
       "identity": "v2",
@@ -38,40 +41,47 @@
       "identity": "w5",
       "uri": "http://hl7.org/fhir/fivews",
       "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
     }
   ],
   "kind": "resource",
   "abstract": false,
-  "type": "FamilyMemberHistory",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "FamilyMemberHistory.identifier",
-        "path": "FamilyMemberHistory.identifier",
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "FamilyMemberHistory.patient",
-        "path": "FamilyMemberHistory.patient",
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-patient"
+              "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
         ]
       },
       {
-        "id": "FamilyMemberHistory.relationship",
-        "path": "FamilyMemberHistory.relationship",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/BasicFamilyMemberVS"
-        }
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
       }
     ]
   }

@@ -13,7 +13,7 @@
   ],
   "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-episode",
   "version": "0.1.0",
-  "name": "MTB_Episode",
+  "name": "MTBEpisode",
   "title": "Episode of Care",
   "status": "active",
   "description": "TBA",

@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CNVType",
+  "id": "CNVType",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/CNVType",
+  "concept": [
+    {
+      "code": "low-level-gain",
+      "display": "Low-level gain"
+    },
+    {
+      "code": "high-level-gain",
+      "display": "High-level gain"
+    },
+    {
+      "code": "loss",
+      "display": "Loss"
+    }
+  ],
+  "count": 3
+}

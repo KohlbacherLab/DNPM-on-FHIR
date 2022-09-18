@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CNVTypeVS",
+  "id": "CNVTypeVS",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/CNVTypeVS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/CNVType"
+      }
+    ]
+  }
+}

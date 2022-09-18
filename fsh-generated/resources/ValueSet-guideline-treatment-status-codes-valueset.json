@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "GuidelineTreatmentStatusCodesVS",
+  "id": "guideline-treatment-status-codes-valueset",
+  "title": "Guideline Treatment Status Codes",
+  "description": "Status codes of guideline treatment of tumor disease",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/guideline-treatment-status-codes-valueset",
+  "compose": {
+    "include": [
+      {
+        "system": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes"
+      }
+    ]
+  }
+}

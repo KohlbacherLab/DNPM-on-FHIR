@@ -13,7 +13,7 @@
   ],
   "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/onco-diagnosis",
   "version": "0.1.0",
-  "name": "Onco_Diagnosis",
+  "name": "OncoDiagnosis",
   "title": "Onco Diagnosis",
   "status": "active",
   "description": "An oncological Diagnosis object",
@@ -58,15 +58,65 @@
   "differential": {
     "element": [
       {
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.extension:guidelineTreatmentStatus",
+        "path": "Condition.extension",
+        "sliceName": "guidelineTreatmentStatus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTreatmentStatus"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Condition.identifier",
         "path": "Condition.identifier",
         "min": 1,
         "max": "1"
       },
       {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+        }
+      },
+      {
+        "id": "Condition.code.coding.version",
+        "path": "Condition.code.coding.version",
+        "min": 1
+      },
+      {
         "id": "Condition.bodySite",
         "path": "Condition.bodySite",
-        "max": "1"
+        "binding": {
+          "strength": "required",
+          "valueSet": "urn:oid:2.16.840.1.113883.6.43.1/topography"
+        }
+      },
+      {
+        "id": "Condition.bodySite.coding.version",
+        "path": "Condition.bodySite.coding.version",
+        "min": 1
       },
       {
         "id": "Condition.subject",
@@ -81,9 +131,89 @@
         ]
       },
       {
-        "id": "Condition.stage.summary",
+        "id": "Condition.stage",
+        "path": "Condition.stage",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "summary"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.stage:whoCnsGrade",
+        "path": "Condition.stage",
+        "sliceName": "whoCnsGrade",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Condition.stage:whoCnsGrade.summary",
         "path": "Condition.stage.summary",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/WHOCNSGradingVS"
+        }
+      },
+      {
+        "id": "Condition.stage:tumorStage",
+        "path": "Condition.stage",
+        "sliceName": "tumorStage",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Condition.stage:tumorStage.extension",
+        "path": "Condition.stage.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1
+      },
+      {
+        "id": "Condition.stage:tumorStage.extension:date",
+        "path": "Condition.stage.extension",
+        "sliceName": "date",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorStageDate"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.stage:tumorStage.summary",
+        "path": "Condition.stage.summary",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorStageVS"
+        }
+      },
+      {
+        "id": "Condition.evidence.detail",
+        "path": "Condition.evidence.detail",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/HistologyReport"
+            ]
+          }
+        ]
       }
     ]
   }

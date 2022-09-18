@@ -1,0 +1,449 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CopyNumberVariant",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/CopyNumberVariant",
+  "version": "0.1.0",
+  "name": "CopyNumberVariant",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/Variant",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "copy-number-variant",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "min": 2
+      },
+      {
+        "id": "Observation.component:chromosome",
+        "path": "Observation.component",
+        "sliceName": "chromosome",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:chromosome.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "48000-4",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:chromosome.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:chromosome.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/ChromosomesVS"
+        }
+      },
+      {
+        "id": "Observation.component:start-range",
+        "path": "Observation.component",
+        "sliceName": "start-range",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:start-range.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "start-range",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:start-range.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Range",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/LBoundedRange"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:end-range",
+        "path": "Observation.component",
+        "sliceName": "end-range",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:end-range.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "end-range",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:end-range.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Range",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/LBoundedRange"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:copy-number",
+        "path": "Observation.component",
+        "sliceName": "copy-number",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:copy-number.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "82155-3",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:copy-number.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:relative-copy-number",
+        "path": "Observation.component",
+        "sliceName": "relative-copy-number",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:relative-copy-number.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "relative-copy-number",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:relative-copy-number.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:cnA",
+        "path": "Observation.component",
+        "sliceName": "cnA",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cnA.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "cnA",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:cnA.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:cnB",
+        "path": "Observation.component",
+        "sliceName": "cnB",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cnB.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "cnB",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:cnB.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:reported-affected-gene",
+        "path": "Observation.component",
+        "sliceName": "reported-affected-gene",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:reported-affected-gene.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "reported-affected-gene",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:reported-affected-gene.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GeneCoding"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:reported-focality",
+        "path": "Observation.component",
+        "sliceName": "reported-focality",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:reported-focality.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "reported-focality",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:reported-focality.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:cnv-type",
+        "path": "Observation.component",
+        "sliceName": "cnv-type",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cnv-type.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "cnv-type",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:cnv-type.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:cnv-type.valueCodeableConcept",
+        "path": "Observation.component.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/CNVTypeVS"
+        }
+      },
+      {
+        "id": "Observation.component:copy-number-neutral-loh",
+        "path": "Observation.component",
+        "sliceName": "copy-number-neutral-loh",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Observation.component:copy-number-neutral-loh.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "copy-number-neutral-loh",
+              "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:copy-number-neutral-loh.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GeneCoding"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

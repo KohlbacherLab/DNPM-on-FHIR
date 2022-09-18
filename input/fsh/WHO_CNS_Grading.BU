@@ -1,0 +1,14 @@
+CodeSystem: WHOCNSGrading
+Id: who-cns-grading
+Title: "WHO Grading of CNS Tumors"
+Description: "WHO Grading of CNS Tumors"
+* #I "Pilocytic astrocytoma"
+* #II "Diffuse astrocytoma"
+* #III "Anaplastic astrocytoma"
+* #IV "Glioblastoma"
+
+ValueSet: WHOCNSGradingVS 
+Id: who-cns-grading-vs
+Title: "WHO Grading of CNS Tumors ValueSet"
+Description: "ValueSet for system WHOCNSGrading"
+* include codes from system WHOCNSGrading 

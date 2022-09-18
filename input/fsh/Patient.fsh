@@ -1,4 +1,4 @@
-Profile: MTB_Patient
+Profile: MTBPatient
 Parent: Patient
 Id: mtb-patient
 Title: "MTB Patient"
