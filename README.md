@@ -16,4 +16,4 @@ Please feel free to contribute to this implementation guide. Issues and change r
 DNPM-on-FHIR Implementation Group
 ------
 
-* `Aydın Can Polatkan <https://github.com/aydincan>`_
+* [Aydın Can Polatkan](mailto:aydin-can.polatkan@uni-tuebingen.de)
