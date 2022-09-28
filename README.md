@@ -8,7 +8,6 @@ Issues
 ------
 Please feel free to contribute to this implementation guide. Issues and change requests are managed [here](https://github.com/KohlbacherLab/DNPM-on-FHIR/issues).
 
-------
 DNPM-on-FHIR Implementation Group
 ------
 * [Aydın Can Polatkan](mailto:aydin-can.polatkan@uni-tuebingen.de)
