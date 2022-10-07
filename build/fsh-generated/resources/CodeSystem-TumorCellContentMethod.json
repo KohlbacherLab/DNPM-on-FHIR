@@ -1,0 +1,20 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TumorCellContentMethod",
+  "id": "TumorCellContentMethod",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod",
+  "concept": [
+    {
+      "code": "histologic",
+      "display": "Histologic"
+    },
+    {
+      "code": "bioinformatic",
+      "display": "Bioinformatic"
+    }
+  ],
+  "count": 2
+}

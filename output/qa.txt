@@ -1,0 +1,251 @@
+﻿DNPMonFHIR : Validation Results
+=========================================
+
+err = 21, warn = 125, info = 9
+IG Publisher Version: 1.2.5 Out of date - current version is ?pub-ver-1?
+Generated Fri Oct 07 12:50:29 CEST 2022. FHIR version 4.0.1 for dnpm.kds#0.1.0 (canonical = https://github.com/KohlbacherLab/DNPM-on-FHIR)
+ Build Errors : 5 / 32 / 0
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/ImplementationGuide-dnpm.kds : 0 / 0 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-RECIST : 0 / 4 / 2
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorCellContentMethod : 0 / 4 / 2
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorSpecimenCollectionMethod : 2 / 4 / 2
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorSpecimenLocalization : 2 / 4 / 2
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorSpecimenType : 2 / 4 / 2
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorStage : 0 / 4 / 2
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-WHOCNSGrading : 0 / 4 / 2
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-guideline-treatment-status-codes : 0 / 2 / 2
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-therapy-stop-reason : 0 / 4 / 2
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-ATCMedication : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-BasicObservation : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-ECOGPerformanceStatus : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-GuidelineTherapy : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-GuidelineTreatmentStatus : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-HistologyReport : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-LastGuidelineTherapy : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-MTBFile : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-Response : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TherapyLine : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TumorCellContent : 2 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TumorMorphology : 4 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TumorSpecimen : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TumorStageDate : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-dnpm-consent : 1 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-family-member-history : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-mtb-episode : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-mtb-patient : 0 / 1 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-onco-diagnosis : 2 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-BasicFamilyMemberVS : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-ICDO3M : 3 / 2 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-ICDO3T : 3 / 2 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-RECISTVS : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TherapyStopReasonVS : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorCellContentMethodVS : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorSpecimenCollectionMethodVS : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorSpecimenLocalizationVS : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorSpecimenTypeVS : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorStageVS : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-WHOCNSGradingVS : 0 / 3 / 1
+ /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-guideline-treatment-status-codes-valueset : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ATCMedication.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BasicObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dnpm-consent.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ECOGPerformanceStatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/GuidelineTherapy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/HistologyReport.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/LastGuidelineTherapy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MTBFile.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Response.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TumorCellContent.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TumorMorphology.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TumorSpecimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/GuidelineTreatmentStatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TherapyLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TumorStageDate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/BasicFamilyMemberVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/RECISTVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TherapyStopReasonVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorCellContentMethodVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorSpecimenCollectionMethodVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorSpecimenLocalizationVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorSpecimenTypeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorStageVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/WHOCNSGradingVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/RECIST.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/therapy-stop-reason.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorCellContentMethod.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorSpecimenCollectionMethod.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorSpecimenLocalization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorSpecimenType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorStage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/WHOCNSGrading.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/output/StructureDefinition-TumorMorphology-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 443, column 115: The link 'urn:oid:2.16.840.1.113883.6.43.1/morphology' for "urn:oid:2.16.840.1.113883.6.43.1/morphology" cannot be resolved
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/output/StructureDefinition-TumorMorphology.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 312, column 1596: The link 'urn:oid:2.16.840.1.113883.6.43.1/morphology' for "urn:oid:2.16.840.1.113883.6.43.1/morphology" cannot be resolved
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/output/StructureDefinition-TumorMorphology.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 362, column 2209: The link 'urn:oid:2.16.840.1.113883.6.43.1/morphology' for "urn:oid:2.16.840.1.113883.6.43.1/morphology" cannot be resolved
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/output/StructureDefinition-TumorMorphology.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 558, column 1596: The link 'urn:oid:2.16.840.1.113883.6.43.1/morphology' for "urn:oid:2.16.840.1.113883.6.43.1/morphology" cannot be resolved
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/output/StructureDefinition-TumorMorphology.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 608, column 2209: The link 'urn:oid:2.16.840.1.113883.6.43.1/morphology' for "urn:oid:2.16.840.1.113883.6.43.1/morphology" cannot be resolved
+== fsh-generated/resources/ImplementationGuide-dnpm.kds.json ==
+== fsh-generated/resources/CodeSystem-RECIST.json ==
+INFORMATION: CodeSystem/RECIST: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/RECIST: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/RECIST: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/RECIST: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/RECIST: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-TumorCellContentMethod.json ==
+INFORMATION: CodeSystem/TumorCellContentMethod: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/TumorCellContentMethod: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorCellContentMethod: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorCellContentMethod: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorCellContentMethod: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-TumorSpecimenCollectionMethod.json ==
+ERROR: CodeSystem.where(url = 'http://bwhc.de/mtb/tumor-specimen/collection-method'): Conformance resource /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/CodeSystem-TumorSpecimenCollectionMethod.json - the canonical URL (https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorSpecimenCollectionMethod) does not match the URL (http://bwhc.de/mtb/tumor-specimen/collection-method)
+INFORMATION: CodeSystem/TumorSpecimenCollectionMethod: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/TumorSpecimenCollectionMethod: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorSpecimenCollectionMethod: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorSpecimenCollectionMethod: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorSpecimenCollectionMethod: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorSpecimenCollectionMethod: URL Mismatch https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorSpecimenCollectionMethod vs http://bwhc.de/mtb/tumor-specimen/collection-method
+== fsh-generated/resources/CodeSystem-TumorSpecimenLocalization.json ==
+ERROR: CodeSystem.where(url = 'http://bwhc.de/mtb/tumor-specimen/localization'): Conformance resource /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/CodeSystem-TumorSpecimenLocalization.json - the canonical URL (https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorSpecimenLocalization) does not match the URL (http://bwhc.de/mtb/tumor-specimen/localization)
+INFORMATION: CodeSystem/TumorSpecimenLocalization: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/TumorSpecimenLocalization: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorSpecimenLocalization: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorSpecimenLocalization: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorSpecimenLocalization: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorSpecimenLocalization: URL Mismatch https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorSpecimenLocalization vs http://bwhc.de/mtb/tumor-specimen/localization
+== fsh-generated/resources/CodeSystem-TumorSpecimenType.json ==
+ERROR: CodeSystem.where(url = 'http://bwhc.de/mtb/tumor-specimen/type'): Conformance resource /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/CodeSystem-TumorSpecimenType.json - the canonical URL (https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorSpecimenType) does not match the URL (http://bwhc.de/mtb/tumor-specimen/type)
+INFORMATION: CodeSystem/TumorSpecimenType: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/TumorSpecimenType: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorSpecimenType: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorSpecimenType: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorSpecimenType: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorSpecimenType: URL Mismatch https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorSpecimenType vs http://bwhc.de/mtb/tumor-specimen/type
+== fsh-generated/resources/CodeSystem-TumorStage.json ==
+INFORMATION: CodeSystem/TumorStage: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/TumorStage: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorStage: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorStage: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/TumorStage: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-WHOCNSGrading.json ==
+INFORMATION: CodeSystem/WHOCNSGrading: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/WHOCNSGrading: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/WHOCNSGrading: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/WHOCNSGrading: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/WHOCNSGrading: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-guideline-treatment-status-codes.json ==
+INFORMATION: CodeSystem/guideline-treatment-status-codes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/guideline-treatment-status-codes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/guideline-treatment-status-codes: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-therapy-stop-reason.json ==
+INFORMATION: CodeSystem/therapy-stop-reason: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/therapy-stop-reason: CodeSystem: The ShareableCodeSystem profile says that the title element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/therapy-stop-reason: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/therapy-stop-reason: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/therapy-stop-reason: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/StructureDefinition-ATCMedication.json ==
+WARNING: StructureDefinition/ATCMedication: StructureDefinition.differential.element[3].binding: The valueSet reference http://fhir.de/CodeSystem/bfarm/atc on element Medication.ingredient.itemCodeableConcept could not be resolved
+WARNING: StructureDefinition/ATCMedication: StructureDefinition.snapshot.element[20].binding: The valueSet reference http://fhir.de/CodeSystem/bfarm/atc on element Medication.ingredient.item[x] could not be resolved
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/ATCMedication'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-BasicObservation.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/BasicObservation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ECOGPerformanceStatus.json ==
+WARNING: StructureDefinition/ECOGPerformanceStatus: StructureDefinition.differential.element[3].binding: The valueSet reference http://loinc.org/vs/LL529-9 on element Observation.valueCodeableConcept could not be resolved
+WARNING: StructureDefinition/ECOGPerformanceStatus: StructureDefinition.snapshot.element[22].binding: The valueSet reference http://loinc.org/vs/LL529-9 on element Observation.value[x] could not be resolved
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/ECOGPerformanceStatus'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-GuidelineTherapy.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTherapy'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-GuidelineTreatmentStatus.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTreatmentStatus'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-HistologyReport.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/HistologyReport'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-LastGuidelineTherapy.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/LastGuidelineTherapy'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-MTBFile.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/MTBFile'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Response.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/Response'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-TherapyLine.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TherapyLine'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-TumorCellContent.json ==
+ERROR: StructureDefinition/TumorCellContent: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: The code "tumor-content" is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-content) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#tumor-content'
+ERROR: StructureDefinition/TumorCellContent: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: The code "tumor-content" is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-content) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#tumor-content'
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorCellContent'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-TumorMorphology.json ==
+ERROR: StructureDefinition/TumorMorphology: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: The code "tumor-morphology" is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-morphology) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#tumor-morphology'
+ERROR: StructureDefinition/TumorMorphology: StructureDefinition.snapshot.element[22].binding.valueSet: OIDs must be valid (2.16.840.1.113883.6.43.1/morphology)
+ERROR: StructureDefinition/TumorMorphology: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: The code "tumor-morphology" is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-morphology) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#tumor-morphology'
+ERROR: StructureDefinition/TumorMorphology: StructureDefinition.differential.element[5].binding.valueSet: OIDs must be valid (2.16.840.1.113883.6.43.1/morphology)
+WARNING: StructureDefinition/TumorMorphology: StructureDefinition.differential.element[5].binding: The valueSet reference urn:oid:2.16.840.1.113883.6.43.1/morphology on element Observation.valueCodeableConcept could not be resolved
+WARNING: StructureDefinition/TumorMorphology: StructureDefinition.snapshot.element[22].binding: The valueSet reference urn:oid:2.16.840.1.113883.6.43.1/morphology on element Observation.value[x] could not be resolved
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorMorphology'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-TumorSpecimen.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorSpecimen'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-TumorStageDate.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorStageDate'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dnpm-consent.json ==
+ERROR: StructureDefinition/dnpm-consent: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/dnpm-consent'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-family-member-history.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/family-member-history'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-mtb-episode.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-episode'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-mtb-patient.json ==
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-onco-diagnosis.json ==
+ERROR: StructureDefinition/onco-diagnosis: StructureDefinition.snapshot.element[27].binding.valueSet: OIDs must be valid (2.16.840.1.113883.6.43.1/topography)
+ERROR: StructureDefinition/onco-diagnosis: StructureDefinition.differential.element[6].binding.valueSet: OIDs must be valid (2.16.840.1.113883.6.43.1/topography)
+WARNING: StructureDefinition/onco-diagnosis: StructureDefinition.differential.element[4].binding: The valueSet reference http://fhir.de/CodeSystem/bfarm/icd-10-gm on element Condition.code could not be resolved
+WARNING: StructureDefinition/onco-diagnosis: StructureDefinition.snapshot.element[15].binding: The valueSet reference http://fhir.de/CodeSystem/bfarm/icd-10-gm on element Condition.code could not be resolved
+WARNING: StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/onco-diagnosis'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-BasicFamilyMemberVS.json ==
+WARNING: ValueSet/BasicFamilyMemberVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/BasicFamilyMemberVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/BasicFamilyMemberVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-ICDO3M.json ==
+ERROR: ValueSet.where(url = 'urn:oid:2.16.840.1.113883.6.43.1/topography'): Conformance resource /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/ValueSet-ICDO3M.json - the canonical URL (https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/ICDO3M) does not match the URL (urn:oid:2.16.840.1.113883.6.43.1/topography)
+ERROR: ValueSet/ICDO3M: ValueSet.url: OIDs must be valid (2.16.840.1.113883.6.43.1/topography)
+WARNING: ValueSet/ICDO3M: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'ICDO3M'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.43.1
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-ICDO3M: URL Mismatch https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/ICDO3M vs urn:oid:2.16.840.1.113883.6.43.1/topography
+== fsh-generated/resources/ValueSet-ICDO3T.json ==
+ERROR: ValueSet.where(url = 'urn:oid:2.16.840.1.113883.6.43.1/topography'): Conformance resource /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/ValueSet-ICDO3T.json - the canonical URL (https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/ICDO3T) does not match the URL (urn:oid:2.16.840.1.113883.6.43.1/topography)
+ERROR: ValueSet/ICDO3T: ValueSet.url: OIDs must be valid (2.16.840.1.113883.6.43.1/topography)
+WARNING: ValueSet/ICDO3T: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'ICDO3T'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.43.1
+ERROR: /Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-ICDO3T: URL Mismatch https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/ICDO3T vs urn:oid:2.16.840.1.113883.6.43.1/topography
+== fsh-generated/resources/ValueSet-RECISTVS.json ==
+WARNING: ValueSet/RECISTVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/RECISTVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/RECISTVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-TherapyStopReasonVS.json ==
+WARNING: ValueSet/TherapyStopReasonVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TherapyStopReasonVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TherapyStopReasonVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-TumorCellContentMethodVS.json ==
+WARNING: ValueSet/TumorCellContentMethodVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorCellContentMethodVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorCellContentMethodVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-TumorSpecimenCollectionMethodVS.json ==
+WARNING: ValueSet/TumorSpecimenCollectionMethodVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorSpecimenCollectionMethodVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorSpecimenCollectionMethodVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-TumorSpecimenLocalizationVS.json ==
+WARNING: ValueSet/TumorSpecimenLocalizationVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorSpecimenLocalizationVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorSpecimenLocalizationVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-TumorSpecimenTypeVS.json ==
+WARNING: ValueSet/TumorSpecimenTypeVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorSpecimenTypeVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorSpecimenTypeVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-TumorStageVS.json ==
+WARNING: ValueSet/TumorStageVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorStageVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/TumorStageVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-WHOCNSGradingVS.json ==
+WARNING: ValueSet/WHOCNSGradingVS: ValueSet: The ShareableValueSet profile says that the title element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/WHOCNSGradingVS: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/WHOCNSGradingVS: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-guideline-treatment-status-codes-valueset.json ==
+WARNING: ValueSet/guideline-treatment-status-codes-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile

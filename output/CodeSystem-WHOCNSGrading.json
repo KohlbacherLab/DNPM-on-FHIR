@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "WHOCNSGrading",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"WHOCNSGrading-I\"> </a></td><td>Pilocytic astrocytoma</td></tr><tr><td style=\"white-space:nowrap\">II<a name=\"WHOCNSGrading-II\"> </a></td><td>Diffuse astrocytoma</td></tr><tr><td style=\"white-space:nowrap\">III<a name=\"WHOCNSGrading-III\"> </a></td><td>Anaplastic astrocytoma</td></tr><tr><td style=\"white-space:nowrap\">IV<a name=\"WHOCNSGrading-IV\"> </a></td><td>Glioblastoma</td></tr></table></div>"
+  },
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading",
+  "version": "0.1.0",
+  "name": "WHOCNSGrading",
+  "status": "active",
+  "date": "2022-10-07T12:49:11+02:00",
+  "publisher": "TBI-UKT",
+  "contact": [
+    {
+      "name": "TBI-UKT",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://kohlbacherlab.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "I",
+      "display": "Pilocytic astrocytoma"
+    },
+    {
+      "code": "II",
+      "display": "Diffuse astrocytoma"
+    },
+    {
+      "code": "III",
+      "display": "Anaplastic astrocytoma"
+    },
+    {
+      "code": "IV",
+      "display": "Glioblastoma"
+    }
+  ]
+}

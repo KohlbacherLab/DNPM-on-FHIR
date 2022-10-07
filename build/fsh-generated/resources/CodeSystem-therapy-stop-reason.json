@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TherapyStopReason",
+  "id": "therapy-stop-reason",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason",
+  "concept": [
+    {
+      "code": "patient-wish",
+      "display": "Patient wish"
+    },
+    {
+      "code": "progression",
+      "display": "Progression"
+    },
+    {
+      "code": "toxicity",
+      "display": "Toxicity"
+    },
+    {
+      "code": "deterioration",
+      "display": "Deterioration"
+    },
+    {
+      "code": "chronic-remission",
+      "display": "Chronic remission"
+    },
+    {
+      "code": "other",
+      "display": "Other"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    }
+  ],
+  "count": 7
+}

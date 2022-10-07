@@ -1,0 +1,716 @@
+{
+  "ImplementationGuide/dnpm.kds": {
+    "history": false,
+    "index": 0,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/ImplementationGuide-dnpm.kds.json",
+    "sourceTail": "ImplementationGuide-dnpm.kds.json",
+    "path": "ImplementationGuide-dnpm.kds.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ImplementationGuide/dnpm.kds",
+    "version": "0.1.0",
+    "name": "DNPMonFHIR",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsd",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Draft"
+    }
+  },
+  "StructureDefinition/ATCMedication": {
+    "history": false,
+    "index": 1,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-ATCMedication.json",
+    "sourceTail": "structuredefinition-ATCMedication.json",
+    "path": "StructureDefinition-ATCMedication.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/ATCMedication",
+    "version": "0.1.0",
+    "name": "ATCMedication",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/BasicObservation": {
+    "history": false,
+    "index": 2,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-BasicObservation.json",
+    "sourceTail": "structuredefinition-BasicObservation.json",
+    "path": "StructureDefinition-BasicObservation.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/BasicObservation",
+    "version": "0.1.0",
+    "name": "BasicObservation",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/dnpm-consent": {
+    "history": false,
+    "index": 3,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-dnpm-consent.json",
+    "sourceTail": "structuredefinition-dnpm-consent.json",
+    "path": "StructureDefinition-dnpm-consent.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/dnpm-consent",
+    "version": "0.1.0",
+    "name": "DNPMConsent",
+    "title": "DNPM Consent",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/ECOGPerformanceStatus": {
+    "history": false,
+    "index": 4,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-ECOGPerformanceStatus.json",
+    "sourceTail": "structuredefinition-ECOGPerformanceStatus.json",
+    "path": "StructureDefinition-ECOGPerformanceStatus.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/ECOGPerformanceStatus",
+    "version": "0.1.0",
+    "name": "ECOGPerformanceStatus",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/family-member-history": {
+    "history": false,
+    "index": 5,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-family-member-history.json",
+    "sourceTail": "structuredefinition-family-member-history.json",
+    "path": "StructureDefinition-family-member-history.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/family-member-history",
+    "version": "0.1.0",
+    "name": "Family_Member_History",
+    "title": "Family Member History",
+    "date": "2022-10-07T12:49:11+02:00",
+    "description": "TBA",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/GuidelineTherapy": {
+    "history": false,
+    "index": 6,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-GuidelineTherapy.json",
+    "sourceTail": "structuredefinition-GuidelineTherapy.json",
+    "path": "StructureDefinition-GuidelineTherapy.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTherapy",
+    "version": "0.1.0",
+    "name": "GuidelineTherapy",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/HistologyReport": {
+    "history": false,
+    "index": 7,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-HistologyReport.json",
+    "sourceTail": "structuredefinition-HistologyReport.json",
+    "path": "StructureDefinition-HistologyReport.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/HistologyReport",
+    "version": "0.1.0",
+    "name": "HistologyReport",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/LastGuidelineTherapy": {
+    "history": false,
+    "index": 8,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-LastGuidelineTherapy.json",
+    "sourceTail": "structuredefinition-LastGuidelineTherapy.json",
+    "path": "StructureDefinition-LastGuidelineTherapy.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/LastGuidelineTherapy",
+    "version": "0.1.0",
+    "name": "LastGuidelineTherapy",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/mtb-episode": {
+    "history": false,
+    "index": 9,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-mtb-episode.json",
+    "sourceTail": "structuredefinition-mtb-episode.json",
+    "path": "StructureDefinition-mtb-episode.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-episode",
+    "version": "0.1.0",
+    "name": "MTBEpisode",
+    "title": "Episode of Care",
+    "date": "2022-10-07T12:49:11+02:00",
+    "description": "TBA",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/MTBFile": {
+    "history": false,
+    "index": 10,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-MTBFile.json",
+    "sourceTail": "structuredefinition-MTBFile.json",
+    "path": "StructureDefinition-MTBFile.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/MTBFile",
+    "version": "0.1.0",
+    "name": "MTBFile",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/mtb-patient": {
+    "history": false,
+    "index": 11,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-mtb-patient.json",
+    "sourceTail": "structuredefinition-mtb-patient.json",
+    "path": "StructureDefinition-mtb-patient.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-patient",
+    "version": "0.1.0",
+    "name": "MTBPatient",
+    "title": "MTB Patient",
+    "date": "2022-10-07T12:49:11+02:00",
+    "description": "A psydonomized MTB Patient",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/onco-diagnosis": {
+    "history": false,
+    "index": 12,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-onco-diagnosis.json",
+    "sourceTail": "structuredefinition-onco-diagnosis.json",
+    "path": "StructureDefinition-onco-diagnosis.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/onco-diagnosis",
+    "version": "0.1.0",
+    "name": "OncoDiagnosis",
+    "title": "Onco Diagnosis",
+    "date": "2022-10-07T12:49:11+02:00",
+    "description": "An oncological Diagnosis object",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/Response": {
+    "history": false,
+    "index": 13,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-Response.json",
+    "sourceTail": "structuredefinition-Response.json",
+    "path": "StructureDefinition-Response.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/Response",
+    "version": "0.1.0",
+    "name": "Response",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/TumorCellContent": {
+    "history": false,
+    "index": 14,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TumorCellContent.json",
+    "sourceTail": "structuredefinition-TumorCellContent.json",
+    "path": "StructureDefinition-TumorCellContent.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorCellContent",
+    "version": "0.1.0",
+    "name": "TumorCellContent",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/TumorMorphology": {
+    "history": false,
+    "index": 15,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TumorMorphology.json",
+    "sourceTail": "structuredefinition-TumorMorphology.json",
+    "path": "StructureDefinition-TumorMorphology.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorMorphology",
+    "version": "0.1.0",
+    "name": "TumorMorphology",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/TumorSpecimen": {
+    "history": false,
+    "index": 16,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TumorSpecimen.json",
+    "sourceTail": "structuredefinition-TumorSpecimen.json",
+    "path": "StructureDefinition-TumorSpecimen.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorSpecimen",
+    "version": "0.1.0",
+    "name": "TumorSpecimen",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/GuidelineTreatmentStatus": {
+    "history": false,
+    "index": 17,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-GuidelineTreatmentStatus.json",
+    "sourceTail": "structuredefinition-GuidelineTreatmentStatus.json",
+    "path": "StructureDefinition-GuidelineTreatmentStatus.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTreatmentStatus",
+    "version": "0.1.0",
+    "name": "GuidelineTreatmentStatus",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/TherapyLine": {
+    "history": false,
+    "index": 18,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TherapyLine.json",
+    "sourceTail": "structuredefinition-TherapyLine.json",
+    "path": "StructureDefinition-TherapyLine.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TherapyLine",
+    "version": "0.1.0",
+    "name": "TherapyLine",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "StructureDefinition/TumorStageDate": {
+    "history": false,
+    "index": 19,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/structuredefinition-TumorStageDate.json",
+    "sourceTail": "structuredefinition-TumorStageDate.json",
+    "path": "StructureDefinition-TumorStageDate.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorStageDate",
+    "version": "0.1.0",
+    "name": "TumorStageDate",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/BasicFamilyMemberVS": {
+    "history": false,
+    "index": 20,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-BasicFamilyMemberVS.json",
+    "sourceTail": "valueset-BasicFamilyMemberVS.json",
+    "path": "ValueSet-BasicFamilyMemberVS.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/BasicFamilyMemberVS",
+    "version": "0.1.0",
+    "name": "BasicFamilyMemberVS",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/guideline-treatment-status-codes-valueset": {
+    "history": false,
+    "index": 21,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-guideline-treatment-status-codes-valueset.json",
+    "sourceTail": "valueset-guideline-treatment-status-codes-valueset.json",
+    "path": "ValueSet-guideline-treatment-status-codes-valueset.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/guideline-treatment-status-codes-valueset",
+    "version": "0.1.0",
+    "name": "GuidelineTreatmentStatusCodesVS",
+    "title": "Guideline Treatment Status Codes",
+    "date": "2022-10-07T12:49:11+02:00",
+    "description": "Status codes of guideline treatment of tumor disease",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/ICDO3M": {
+    "history": false,
+    "index": 22,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-ICDO3M.json",
+    "sourceTail": "valueset-ICDO3M.json",
+    "path": "ValueSet-ICDO3M.html",
+    "url": "urn:oid:2.16.840.1.113883.6.43.1/topography",
+    "version": "0.1.0",
+    "name": "ICDO3Morphology",
+    "title": "ICD-O-3-Morphology",
+    "date": "2022-10-07T12:49:11+02:00",
+    "description": "ICD-O-3 Morphology codes with ClaML kind \u003d \u0027category\u0027 (hence the regex filter for pattern ****:*)",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/ICDO3T": {
+    "history": false,
+    "index": 23,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-ICDO3T.json",
+    "sourceTail": "valueset-ICDO3T.json",
+    "path": "ValueSet-ICDO3T.html",
+    "url": "urn:oid:2.16.840.1.113883.6.43.1/topography",
+    "version": "0.1.0",
+    "name": "ICDO3Topography",
+    "title": "ICD-O-3-Topography",
+    "date": "2022-10-07T12:49:11+02:00",
+    "description": "ICD-O-3 Topography codes with ClaML kind \u003d \u0027category\u0027 (hence the regex filter for pattern C**[.*])",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/RECISTVS": {
+    "history": false,
+    "index": 24,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-RECISTVS.json",
+    "sourceTail": "valueset-RECISTVS.json",
+    "path": "ValueSet-RECISTVS.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/RECISTVS",
+    "version": "0.1.0",
+    "name": "RECISTVS",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/TherapyStopReasonVS": {
+    "history": false,
+    "index": 25,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TherapyStopReasonVS.json",
+    "sourceTail": "valueset-TherapyStopReasonVS.json",
+    "path": "ValueSet-TherapyStopReasonVS.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TherapyStopReasonVS",
+    "version": "0.1.0",
+    "name": "TherapyStopReasonVS",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/TumorCellContentMethodVS": {
+    "history": false,
+    "index": 26,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorCellContentMethodVS.json",
+    "sourceTail": "valueset-TumorCellContentMethodVS.json",
+    "path": "ValueSet-TumorCellContentMethodVS.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorCellContentMethodVS",
+    "version": "0.1.0",
+    "name": "TumorCellContentMethodVS",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/TumorSpecimenCollectionMethodVS": {
+    "history": false,
+    "index": 27,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorSpecimenCollectionMethodVS.json",
+    "sourceTail": "valueset-TumorSpecimenCollectionMethodVS.json",
+    "path": "ValueSet-TumorSpecimenCollectionMethodVS.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenCollectionMethodVS",
+    "version": "0.1.0",
+    "name": "TumorSpecimenCollectionMethodVS",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/TumorSpecimenLocalizationVS": {
+    "history": false,
+    "index": 28,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorSpecimenLocalizationVS.json",
+    "sourceTail": "valueset-TumorSpecimenLocalizationVS.json",
+    "path": "ValueSet-TumorSpecimenLocalizationVS.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenLocalizationVS",
+    "version": "0.1.0",
+    "name": "TumorSpecimenLocalizationVS",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/TumorSpecimenTypeVS": {
+    "history": false,
+    "index": 29,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorSpecimenTypeVS.json",
+    "sourceTail": "valueset-TumorSpecimenTypeVS.json",
+    "path": "ValueSet-TumorSpecimenTypeVS.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenTypeVS",
+    "version": "0.1.0",
+    "name": "TumorSpecimenTypeVS",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/TumorStageVS": {
+    "history": false,
+    "index": 30,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-TumorStageVS.json",
+    "sourceTail": "valueset-TumorStageVS.json",
+    "path": "ValueSet-TumorStageVS.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorStageVS",
+    "version": "0.1.0",
+    "name": "TumorStageVS",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "ValueSet/WHOCNSGradingVS": {
+    "history": false,
+    "index": 31,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/valueset-WHOCNSGradingVS.json",
+    "sourceTail": "valueset-WHOCNSGradingVS.json",
+    "path": "ValueSet-WHOCNSGradingVS.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/WHOCNSGradingVS",
+    "version": "0.1.0",
+    "name": "WHOCNSGradingVS",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/guideline-treatment-status-codes": {
+    "history": false,
+    "index": 32,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-guideline-treatment-status-codes.json",
+    "sourceTail": "codesystem-guideline-treatment-status-codes.json",
+    "path": "CodeSystem-guideline-treatment-status-codes.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes",
+    "version": "0.1.0",
+    "name": "GuidelineTreatmentStatusCodes",
+    "title": "Guideline Treatment Status Codes",
+    "date": "2022-10-07T12:49:11+02:00",
+    "description": "Status codes of guideline treatment of tumor disease",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/RECIST": {
+    "history": false,
+    "index": 33,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-RECIST.json",
+    "sourceTail": "codesystem-RECIST.json",
+    "path": "CodeSystem-RECIST.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST",
+    "version": "0.1.0",
+    "name": "RECIST",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/therapy-stop-reason": {
+    "history": false,
+    "index": 34,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-therapy-stop-reason.json",
+    "sourceTail": "codesystem-therapy-stop-reason.json",
+    "path": "CodeSystem-therapy-stop-reason.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason",
+    "version": "0.1.0",
+    "name": "TherapyStopReason",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/TumorCellContentMethod": {
+    "history": false,
+    "index": 35,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorCellContentMethod.json",
+    "sourceTail": "codesystem-TumorCellContentMethod.json",
+    "path": "CodeSystem-TumorCellContentMethod.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod",
+    "version": "0.1.0",
+    "name": "TumorCellContentMethod",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/TumorSpecimenCollectionMethod": {
+    "history": false,
+    "index": 36,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorSpecimenCollectionMethod.json",
+    "sourceTail": "codesystem-TumorSpecimenCollectionMethod.json",
+    "path": "CodeSystem-TumorSpecimenCollectionMethod.html",
+    "url": "http://bwhc.de/mtb/tumor-specimen/collection-method",
+    "version": "0.1.0",
+    "name": "TumorSpecimenCollectionMethod",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/TumorSpecimenLocalization": {
+    "history": false,
+    "index": 37,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorSpecimenLocalization.json",
+    "sourceTail": "codesystem-TumorSpecimenLocalization.json",
+    "path": "CodeSystem-TumorSpecimenLocalization.html",
+    "url": "http://bwhc.de/mtb/tumor-specimen/localization",
+    "version": "0.1.0",
+    "name": "TumorSpecimenLocalization",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/TumorSpecimenType": {
+    "history": false,
+    "index": 38,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorSpecimenType.json",
+    "sourceTail": "codesystem-TumorSpecimenType.json",
+    "path": "CodeSystem-TumorSpecimenType.html",
+    "url": "http://bwhc.de/mtb/tumor-specimen/type",
+    "version": "0.1.0",
+    "name": "TumorSpecimenType",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/TumorStage": {
+    "history": false,
+    "index": 39,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-TumorStage.json",
+    "sourceTail": "codesystem-TumorStage.json",
+    "path": "CodeSystem-TumorStage.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage",
+    "version": "0.1.0",
+    "name": "TumorStage",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  },
+  "CodeSystem/WHOCNSGrading": {
+    "history": false,
+    "index": 40,
+    "source": "/Users/aydincan/Documents/DNPM-on-FHIR/fsh-generated/resources/codesystem-WHOCNSGrading.json",
+    "sourceTail": "codesystem-WHOCNSGrading.json",
+    "path": "CodeSystem-WHOCNSGrading.html",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading",
+    "version": "0.1.0",
+    "name": "WHOCNSGrading",
+    "date": "2022-10-07T12:49:11+02:00",
+    "status": {
+      "class": "colsi",
+      "owner": "TBI-UKT",
+      "link": "https://kohlbacherlab.org",
+      "status": "Active"
+    }
+  }
+}

@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="39985ec4-2047-4534-a408-d1d5fbd91a32"/>
+  <meta>
+    <lastUpdated value="2022-10-07T12:49:11.323+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/BasicFamilyMemberVS"/>
+    <resource>
+      <ValueSet>
+        <id value="BasicFamilyMemberVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-RoleCode.html">RoleCode v2.2.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-RoleCode-FAMMEMB"> </a>  
+                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-FAMMEMB">FAMMEMB</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td>
+                <td>family member</td>
+                <td>
+                  <div>
+                    <p>A relationship between two people characterizing their &quot;familial&quot; relationship</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-RoleCode-EXT"> </a>  
+                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-EXT">EXT</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td>
+                <td>extended family member</td>
+                <td>
+                  <div>
+                    <p>
+                      <strong>Description:</strong> A family member not having an immediate genetic or legal relationship e.g. Aunt, cousin, great grandparent, grandchild, grandparent, niece, nephew or uncle.
+                    </p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/BasicFamilyMemberVS"/>
+        <version value="0.1.0"/>
+        <name value="BasicFamilyMemberVS"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:21dc497b-b128-4455-ad40-63aaf51f8869"/>
+          <timestamp value="2022-10-07T12:49:56+02:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-RoleCode|2.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="FAMMEMB"/>
+            <display value="family member"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="EXT"/>
+            <display value="extended family member"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/guideline-treatment-status-codes-valueset"/>
+    <resource>
+      <ValueSet>
+        <id value="guideline-treatment-status-codes-valueset"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-guideline-treatment-status-codes.html">Guideline Treatment Status Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-guideline-treatment-status-codes-exhausted"> </a>  
+                  <a href="CodeSystem-guideline-treatment-status-codes.html#guideline-treatment-status-codes-exhausted">exhausted</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes</td>
+                <td>Exhausted</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-guideline-treatment-status-codes-non-exhausted"> </a>  
+                  <a href="CodeSystem-guideline-treatment-status-codes.html#guideline-treatment-status-codes-non-exhausted">non-exhausted</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes</td>
+                <td>Non-extausted</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-guideline-treatment-status-codes-impossible"> </a>  
+                  <a href="CodeSystem-guideline-treatment-status-codes.html#guideline-treatment-status-codes-impossible">impossible</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes</td>
+                <td>Impossible</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-guideline-treatment-status-codes-no-guidelines-available"> </a>  
+                  <a href="CodeSystem-guideline-treatment-status-codes.html#guideline-treatment-status-codes-no-guidelines-available">no-guidelines-available</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes</td>
+                <td>No guidelines available</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-guideline-treatment-status-codes-unknown"> </a>  
+                  <a href="CodeSystem-guideline-treatment-status-codes.html#guideline-treatment-status-codes-unknown">unknown</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/guideline-treatment-status-codes-valueset"/>
+        <version value="0.1.0"/>
+        <name value="GuidelineTreatmentStatusCodesVS"/>
+        <title value="Guideline Treatment Status Codes"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <description value="Status codes of guideline treatment of tumor disease"/>
+        <expansion>
+          <identifier value="urn:uuid:c79d2840-0414-4562-be95-eaa5a0b0957b"/>
+          <timestamp value="2022-10-07T12:49:56+02:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes"/>
+            <code value="exhausted"/>
+            <display value="Exhausted"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes"/>
+            <code value="non-exhausted"/>
+            <display value="Non-extausted"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes"/>
+            <code value="impossible"/>
+            <display value="Impossible"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes"/>
+            <code value="no-guidelines-available"/>
+            <display value="No guidelines available"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/RECISTVS"/>
+    <resource>
+      <ValueSet>
+        <id value="RECISTVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-RECIST.html">RECIST v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-RECIST-CR"> </a>  
+                  <a href="CodeSystem-RECIST.html#RECIST-CR">CR</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST</td>
+                <td>Complete Response</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-RECIST-PR"> </a>  
+                  <a href="CodeSystem-RECIST.html#RECIST-PR">PR</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST</td>
+                <td>Partial Response</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-RECIST-MR"> </a>  
+                  <a href="CodeSystem-RECIST.html#RECIST-MR">MR</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST</td>
+                <td>Mixed Response</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-RECIST-SD"> </a>  
+                  <a href="CodeSystem-RECIST.html#RECIST-SD">SD</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST</td>
+                <td>Stable Disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-RECIST-PD"> </a>  
+                  <a href="CodeSystem-RECIST.html#RECIST-PD">PD</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST</td>
+                <td>Progressive Disease</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-RECIST-NA"> </a>  
+                  <a href="CodeSystem-RECIST.html#RECIST-NA">NA</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST</td>
+                <td>Not Assessable</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-RECIST-NYA"> </a>  
+                  <a href="CodeSystem-RECIST.html#RECIST-NYA">NYA</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST</td>
+                <td>Not Yet Assessable</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/RECISTVS"/>
+        <version value="0.1.0"/>
+        <name value="RECISTVS"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:cadf48b6-307c-408c-8d87-ea178944c5db"/>
+          <timestamp value="2022-10-07T12:49:57+02:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"/>
+            <code value="CR"/>
+            <display value="Complete Response"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"/>
+            <code value="PR"/>
+            <display value="Partial Response"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"/>
+            <code value="MR"/>
+            <display value="Mixed Response"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"/>
+            <code value="SD"/>
+            <display value="Stable Disease"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"/>
+            <code value="PD"/>
+            <display value="Progressive Disease"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"/>
+            <code value="NA"/>
+            <display value="Not Assessable"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"/>
+            <code value="NYA"/>
+            <display value="Not Yet Assessable"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TherapyStopReasonVS"/>
+    <resource>
+      <ValueSet>
+        <id value="TherapyStopReasonVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-therapy-stop-reason.html">TherapyStopReason v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-therapy-stop-reason-patient-wish"> </a>  
+                  <a href="CodeSystem-therapy-stop-reason.html#therapy-stop-reason-patient-wish">patient-wish</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason</td>
+                <td>Patient wish</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-therapy-stop-reason-progression"> </a>  
+                  <a href="CodeSystem-therapy-stop-reason.html#therapy-stop-reason-progression">progression</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason</td>
+                <td>Progression</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-therapy-stop-reason-toxicity"> </a>  
+                  <a href="CodeSystem-therapy-stop-reason.html#therapy-stop-reason-toxicity">toxicity</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason</td>
+                <td>Toxicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-therapy-stop-reason-deterioration"> </a>  
+                  <a href="CodeSystem-therapy-stop-reason.html#therapy-stop-reason-deterioration">deterioration</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason</td>
+                <td>Deterioration</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-therapy-stop-reason-chronic-remission"> </a>  
+                  <a href="CodeSystem-therapy-stop-reason.html#therapy-stop-reason-chronic-remission">chronic-remission</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason</td>
+                <td>Chronic remission</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-therapy-stop-reason-other"> </a>  
+                  <a href="CodeSystem-therapy-stop-reason.html#therapy-stop-reason-other">other</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason</td>
+                <td>Other</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-therapy-stop-reason-unknown"> </a>  
+                  <a href="CodeSystem-therapy-stop-reason.html#therapy-stop-reason-unknown">unknown</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TherapyStopReasonVS"/>
+        <version value="0.1.0"/>
+        <name value="TherapyStopReasonVS"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:f3ebb19b-1f7a-47b4-aef7-59f1851b9f64"/>
+          <timestamp value="2022-10-07T12:49:57+02:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason"/>
+            <code value="patient-wish"/>
+            <display value="Patient wish"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason"/>
+            <code value="progression"/>
+            <display value="Progression"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason"/>
+            <code value="toxicity"/>
+            <display value="Toxicity"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason"/>
+            <code value="deterioration"/>
+            <display value="Deterioration"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason"/>
+            <code value="chronic-remission"/>
+            <display value="Chronic remission"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason"/>
+            <code value="other"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorCellContentMethodVS"/>
+    <resource>
+      <ValueSet>
+        <id value="TumorCellContentMethodVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TumorCellContentMethod.html">TumorCellContentMethod v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-TumorCellContentMethod-histologic"> </a>  
+                  <a href="CodeSystem-TumorCellContentMethod.html#TumorCellContentMethod-histologic">histologic</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod</td>
+                <td>Histologic</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-TumorCellContentMethod-bioinformatic"> </a>  
+                  <a href="CodeSystem-TumorCellContentMethod.html#TumorCellContentMethod-bioinformatic">bioinformatic</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod</td>
+                <td>Bioinformatic</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorCellContentMethodVS"/>
+        <version value="0.1.0"/>
+        <name value="TumorCellContentMethodVS"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:385a1ca2-4c4f-401b-ada3-765a36e34850"/>
+          <timestamp value="2022-10-07T12:49:57+02:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod"/>
+            <code value="histologic"/>
+            <display value="Histologic"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod"/>
+            <code value="bioinformatic"/>
+            <display value="Bioinformatic"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenCollectionMethodVS"/>
+    <resource>
+      <ValueSet>
+        <id value="TumorSpecimenCollectionMethodVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TumorSpecimenCollectionMethod.html">TumorSpecimenCollectionMethod v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-collection-method-biopsy"> </a>  
+                  <a href="CodeSystem-TumorSpecimenCollectionMethod.html#TumorSpecimenCollectionMethod-biopsy">biopsy</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/collection-method</td>
+                <td>Biopsy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-collection-method-resection"> </a>  
+                  <a href="CodeSystem-TumorSpecimenCollectionMethod.html#TumorSpecimenCollectionMethod-resection">resection</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/collection-method</td>
+                <td>Resection</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-collection-method-liquid-biopsy"> </a>  
+                  <a href="CodeSystem-TumorSpecimenCollectionMethod.html#TumorSpecimenCollectionMethod-liquid-biopsy">liquid-biopsy</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/collection-method</td>
+                <td>Liquid biopsy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-collection-method-cytology"> </a>  
+                  <a href="CodeSystem-TumorSpecimenCollectionMethod.html#TumorSpecimenCollectionMethod-cytology">cytology</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/collection-method</td>
+                <td>Cytology</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-collection-method-unknown"> </a>  
+                  <a href="CodeSystem-TumorSpecimenCollectionMethod.html#TumorSpecimenCollectionMethod-unknown">unknown</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/collection-method</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenCollectionMethodVS"/>
+        <version value="0.1.0"/>
+        <name value="TumorSpecimenCollectionMethodVS"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:90b19e0d-76c9-4404-8f47-b6977bdee3f1"/>
+          <timestamp value="2022-10-07T12:49:57+02:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://bwhc.de/mtb/tumor-specimen/collection-method|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/collection-method"/>
+            <code value="biopsy"/>
+            <display value="Biopsy"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/collection-method"/>
+            <code value="resection"/>
+            <display value="Resection"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/collection-method"/>
+            <code value="liquid-biopsy"/>
+            <display value="Liquid biopsy"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/collection-method"/>
+            <code value="cytology"/>
+            <display value="Cytology"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/collection-method"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenLocalizationVS"/>
+    <resource>
+      <ValueSet>
+        <id value="TumorSpecimenLocalizationVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TumorSpecimenLocalization.html">TumorSpecimenLocalization v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-localization-primary-tumor"> </a>  
+                  <a href="CodeSystem-TumorSpecimenLocalization.html#TumorSpecimenLocalization-primary-tumor">primary-tumor</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/localization</td>
+                <td>Primary tumor</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-localization-metastasis"> </a>  
+                  <a href="CodeSystem-TumorSpecimenLocalization.html#TumorSpecimenLocalization-metastasis">metastasis</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/localization</td>
+                <td>Metastasis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-localization-unknown"> </a>  
+                  <a href="CodeSystem-TumorSpecimenLocalization.html#TumorSpecimenLocalization-unknown">unknown</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/localization</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenLocalizationVS"/>
+        <version value="0.1.0"/>
+        <name value="TumorSpecimenLocalizationVS"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:30b91ad3-1053-4781-a768-afab2a1bcdae"/>
+          <timestamp value="2022-10-07T12:49:58+02:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://bwhc.de/mtb/tumor-specimen/localization|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/localization"/>
+            <code value="primary-tumor"/>
+            <display value="Primary tumor"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/localization"/>
+            <code value="metastasis"/>
+            <display value="Metastasis"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/localization"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenTypeVS"/>
+    <resource>
+      <ValueSet>
+        <id value="TumorSpecimenTypeVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TumorSpecimenType.html">TumorSpecimenType v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-type-fresh-tissue"> </a>  
+                  <a href="CodeSystem-TumorSpecimenType.html#TumorSpecimenType-fresh-tissue">fresh-tissue</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/type</td>
+                <td>Fresh tissue</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-type-cryo-frozen"> </a>  
+                  <a href="CodeSystem-TumorSpecimenType.html#TumorSpecimenType-cryo-frozen">cryo-frozen</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/type</td>
+                <td>Cryo-frozen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-type-liquid-biopsy"> </a>  
+                  <a href="CodeSystem-TumorSpecimenType.html#TumorSpecimenType-liquid-biopsy">liquid-biopsy</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/type</td>
+                <td>Liquid biopsy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-type-FFPE"> </a>  
+                  <a href="CodeSystem-TumorSpecimenType.html#TumorSpecimenType-FFPE">FFPE</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/type</td>
+                <td>FFPE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---bwhc.de-mtb-tumor-specimen-type-unknown"> </a>  
+                  <a href="CodeSystem-TumorSpecimenType.html#TumorSpecimenType-unknown">unknown</a>
+                </td>
+                <td>http://bwhc.de/mtb/tumor-specimen/type</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenTypeVS"/>
+        <version value="0.1.0"/>
+        <name value="TumorSpecimenTypeVS"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:80b61e3d-637e-4e73-bf33-ab1a442724ca"/>
+          <timestamp value="2022-10-07T12:49:58+02:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://bwhc.de/mtb/tumor-specimen/type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/type"/>
+            <code value="fresh-tissue"/>
+            <display value="Fresh tissue"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/type"/>
+            <code value="cryo-frozen"/>
+            <display value="Cryo-frozen"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/type"/>
+            <code value="liquid-biopsy"/>
+            <display value="Liquid biopsy"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/type"/>
+            <code value="FFPE"/>
+            <display value="FFPE"/>
+          </contains>
+          <contains>
+            <system value="http://bwhc.de/mtb/tumor-specimen/type"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorStageVS"/>
+    <resource>
+      <ValueSet>
+        <id value="TumorStageVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TumorStage.html">TumorStage v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-TumorStage-tumor-free"> </a>  
+                  <a href="CodeSystem-TumorStage.html#TumorStage-tumor-free">tumor-free</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage</td>
+                <td>Tumor-free</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-TumorStage-local"> </a>  
+                  <a href="CodeSystem-TumorStage.html#TumorStage-local">local</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage</td>
+                <td>Local</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-TumorStage-metastasized"> </a>  
+                  <a href="CodeSystem-TumorStage.html#TumorStage-metastasized">metastasized</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage</td>
+                <td>Metastasized</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-TumorStage-unknown"> </a>  
+                  <a href="CodeSystem-TumorStage.html#TumorStage-unknown">unknown</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorStageVS"/>
+        <version value="0.1.0"/>
+        <name value="TumorStageVS"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:2d652bb6-7fc4-4966-877b-917aea4ee740"/>
+          <timestamp value="2022-10-07T12:49:58+02:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage"/>
+            <code value="tumor-free"/>
+            <display value="Tumor-free"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage"/>
+            <code value="local"/>
+            <display value="Local"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage"/>
+            <code value="metastasized"/>
+            <display value="Metastasized"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/WHOCNSGradingVS"/>
+    <resource>
+      <ValueSet>
+        <id value="WHOCNSGradingVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-WHOCNSGrading.html">WHOCNSGrading v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-WHOCNSGrading-I"> </a>  
+                  <a href="CodeSystem-WHOCNSGrading.html#WHOCNSGrading-I">I</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading</td>
+                <td>Pilocytic astrocytoma</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-WHOCNSGrading-II"> </a>  
+                  <a href="CodeSystem-WHOCNSGrading.html#WHOCNSGrading-II">II</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading</td>
+                <td>Diffuse astrocytoma</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-WHOCNSGrading-III"> </a>  
+                  <a href="CodeSystem-WHOCNSGrading.html#WHOCNSGrading-III">III</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading</td>
+                <td>Anaplastic astrocytoma</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---github.com-KohlbacherLab-DNPM-on-FHIR-CodeSystem-WHOCNSGrading-IV"> </a>  
+                  <a href="CodeSystem-WHOCNSGrading.html#WHOCNSGrading-IV">IV</a>
+                </td>
+                <td>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading</td>
+                <td>Glioblastoma</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/WHOCNSGradingVS"/>
+        <version value="0.1.0"/>
+        <name value="WHOCNSGradingVS"/>
+        <status value="active"/>
+        <date value="2022-10-07T12:49:11+02:00"/>
+        <publisher value="TBI-UKT"/>
+        <contact>
+          <name value="TBI-UKT"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://kohlbacherlab.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:c275452b-0dfc-4f6c-b53d-05ec4aa25e7b"/>
+          <timestamp value="2022-10-07T12:49:58+02:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading"/>
+            <code value="I"/>
+            <display value="Pilocytic astrocytoma"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading"/>
+            <code value="II"/>
+            <display value="Diffuse astrocytoma"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading"/>
+            <code value="III"/>
+            <display value="Anaplastic astrocytoma"/>
+          </contains>
+          <contains>
+            <system value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading"/>
+            <code value="IV"/>
+            <display value="Glioblastoma"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TumorStage",
+  "id": "TumorStage",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage",
+  "concept": [
+    {
+      "code": "tumor-free",
+      "display": "Tumor-free"
+    },
+    {
+      "code": "local",
+      "display": "Local"
+    },
+    {
+      "code": "metastasized",
+      "display": "Metastasized"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    }
+  ],
+  "count": 4
+}

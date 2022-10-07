@@ -1,0 +1,51 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "guideline-treatment-status-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">exhausted<a name=\"guideline-treatment-status-codes-exhausted\"> </a></td><td>Exhausted</td></tr><tr><td style=\"white-space:nowrap\">non-exhausted<a name=\"guideline-treatment-status-codes-non-exhausted\"> </a></td><td>Non-extausted</td></tr><tr><td style=\"white-space:nowrap\">impossible<a name=\"guideline-treatment-status-codes-impossible\"> </a></td><td>Impossible</td></tr><tr><td style=\"white-space:nowrap\">no-guidelines-available<a name=\"guideline-treatment-status-codes-no-guidelines-available\"> </a></td><td>No guidelines available</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"guideline-treatment-status-codes-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes",
+  "version": "0.1.0",
+  "name": "GuidelineTreatmentStatusCodes",
+  "title": "Guideline Treatment Status Codes",
+  "status": "active",
+  "date": "2022-10-07T12:49:11+02:00",
+  "publisher": "TBI-UKT",
+  "contact": [
+    {
+      "name": "TBI-UKT",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://kohlbacherlab.org"
+        }
+      ]
+    }
+  ],
+  "description": "Status codes of guideline treatment of tumor disease",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "exhausted",
+      "display": "Exhausted"
+    },
+    {
+      "code": "non-exhausted",
+      "display": "Non-extausted"
+    },
+    {
+      "code": "impossible",
+      "display": "Impossible"
+    },
+    {
+      "code": "no-guidelines-available",
+      "display": "No guidelines available"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    }
+  ]
+}

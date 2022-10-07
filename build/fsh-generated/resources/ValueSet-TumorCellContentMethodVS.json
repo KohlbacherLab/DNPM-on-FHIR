@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TumorCellContentMethodVS",
+  "id": "TumorCellContentMethodVS",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorCellContentMethodVS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod"
+      }
+    ]
+  }
+}

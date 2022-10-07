@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TumorSpecimenLocalization",
+  "id": "TumorSpecimenLocalization",
+  "version": "0.1.0",
+  "url": "http://bwhc.de/mtb/tumor-specimen/localization",
+  "concept": [
+    {
+      "code": "primary-tumor",
+      "display": "Primary tumor"
+    },
+    {
+      "code": "metastasis",
+      "display": "Metastasis"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    }
+  ],
+  "count": 3
+}

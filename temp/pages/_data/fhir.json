@@ -1,0 +1,47 @@
+{
+  "path": "http://hl7.org/fhir/R4/",
+  "canonical": "https://github.com/KohlbacherLab/DNPM-on-FHIR",
+  "igId": "dnpm.kds",
+  "igName": "DNPMonFHIR",
+  "packageId": "dnpm.kds",
+  "igVer": "0.1.0",
+  "errorCount": 16,
+  "version": "4.0.1",
+  "revision": "a53ec6ee1b",
+  "versionFull": "4.0.1-a53ec6ee1b",
+  "toolingVersion": "5.0.0-ballot",
+  "toolingRevision": "3",
+  "toolingVersionFull": "5.0.0-ballot (3)",
+  "totalFiles": 41,
+  "processedFiles": 48,
+  "genDate": "Fri, Oct 7, 2022 12:49+0200",
+  "genDay": "07/10/2022",
+  "ig": {
+    "id": "dnpm.kds",
+    "name": "DNPMonFHIR",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ImplementationGuide/dnpm.kds",
+    "version": "0.1.0",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "TBI-UKT",
+    "gitstatus": "main",
+    "contact": [
+      {
+        "name": "TBI-UKT",
+        "telecom": [
+          "https://kohlbacherlab.org"
+        ]
+      }
+    ],
+    "date": "2022-10-07T12:49:11+02:00",
+    "fhirVersion": "4.0.1"
+  },
+  "hl7tx": "http://terminology.hl7.org",
+  "ver": {
+    "hl7tx": "http://terminology.hl7.org/4.0.0",
+    "igtools": "https://build.fhir.org/ig/FHIR/fhir-tools-ig/",
+    "hl7.fhir.r5.core": "http://build.fhir.org/"
+  },
+  "igtools": "http://hl7.org/fhir/tools",
+  "hl7.fhir.r5.core": "http://build.fhir.org"
+}

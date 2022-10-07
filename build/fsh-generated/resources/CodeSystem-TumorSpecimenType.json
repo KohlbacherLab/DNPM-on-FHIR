@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TumorSpecimenType",
+  "id": "TumorSpecimenType",
+  "version": "0.1.0",
+  "url": "http://bwhc.de/mtb/tumor-specimen/type",
+  "concept": [
+    {
+      "code": "fresh-tissue",
+      "display": "Fresh tissue"
+    },
+    {
+      "code": "cryo-frozen",
+      "display": "Cryo-frozen"
+    },
+    {
+      "code": "liquid-biopsy",
+      "display": "Liquid biopsy"
+    },
+    {
+      "code": "FFPE",
+      "display": "FFPE"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    }
+  ],
+  "count": 5
+}

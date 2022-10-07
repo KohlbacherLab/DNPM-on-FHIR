@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RECISTVS",
+  "id": "RECISTVS",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/RECISTVS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"
+      }
+    ]
+  }
+}

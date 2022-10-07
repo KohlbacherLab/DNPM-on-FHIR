@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="TumorCellContentMethod"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">histologic<a name="TumorCellContentMethod-histologic"> </a></td><td>Histologic</td></tr><tr><td style="white-space:nowrap">bioinformatic<a name="TumorCellContentMethod-bioinformatic"> </a></td><td>Bioinformatic</td></tr></table></div>
+  </text>
+  <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod"/>
+  <version value="0.1.0"/>
+  <name value="TumorCellContentMethod"/>
+  <status value="active"/>
+  <date value="2022-10-07T12:49:11+02:00"/>
+  <publisher value="TBI-UKT"/>
+  <contact>
+    <name value="TBI-UKT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://kohlbacherlab.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="histologic"/>
+    <display value="Histologic"/>
+  </concept>
+  <concept>
+    <code value="bioinformatic"/>
+    <display value="Bioinformatic"/>
+  </concept>
+</CodeSystem>

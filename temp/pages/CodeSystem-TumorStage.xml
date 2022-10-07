@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="TumorStage"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">tumor-free<a name="TumorStage-tumor-free"> </a></td><td>Tumor-free</td></tr><tr><td style="white-space:nowrap">local<a name="TumorStage-local"> </a></td><td>Local</td></tr><tr><td style="white-space:nowrap">metastasized<a name="TumorStage-metastasized"> </a></td><td>Metastasized</td></tr><tr><td style="white-space:nowrap">unknown<a name="TumorStage-unknown"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage"/>
+  <version value="0.1.0"/>
+  <name value="TumorStage"/>
+  <status value="active"/>
+  <date value="2022-10-07T12:49:11+02:00"/>
+  <publisher value="TBI-UKT"/>
+  <contact>
+    <name value="TBI-UKT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://kohlbacherlab.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="tumor-free"/>
+    <display value="Tumor-free"/>
+  </concept>
+  <concept>
+    <code value="local"/>
+    <display value="Local"/>
+  </concept>
+  <concept>
+    <code value="metastasized"/>
+    <display value="Metastasized"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,116 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TumorSpecimen",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorSpecimen",
+  "version": "0.1.0",
+  "name": "TumorSpecimen",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.identifier",
+        "path": "Specimen.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Specimen.subject",
+        "path": "Specimen.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collected[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.collectedDateTime",
+        "path": "Specimen.collection.collectedDateTime",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Specimen.collection.method",
+        "path": "Specimen.collection.method",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenCollectionMethodVS"
+        }
+      },
+      {
+        "id": "Specimen.collection.bodySite",
+        "path": "Specimen.collection.bodySite",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenLocalizationVS"
+        }
+      },
+      {
+        "id": "Specimen.condition",
+        "path": "Specimen.condition",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenTypeVS"
+        }
+      }
+    ]
+  }
+}

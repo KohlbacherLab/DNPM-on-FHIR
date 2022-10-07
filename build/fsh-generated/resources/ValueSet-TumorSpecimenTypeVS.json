@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TumorSpecimenTypeVS",
+  "id": "TumorSpecimenTypeVS",
+  "version": "0.1.0",
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenTypeVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://bwhc.de/mtb/tumor-specimen/type"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "therapy-stop-reason"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">patient-wish<a name=\"therapy-stop-reason-patient-wish\"> </a></td><td>Patient wish</td></tr><tr><td style=\"white-space:nowrap\">progression<a name=\"therapy-stop-reason-progression\"> </a></td><td>Progression</td></tr><tr><td style=\"white-space:nowrap\">toxicity<a name=\"therapy-stop-reason-toxicity\"> </a></td><td>Toxicity</td></tr><tr><td style=\"white-space:nowrap\">deterioration<a name=\"therapy-stop-reason-deterioration\"> </a></td><td>Deterioration</td></tr><tr><td style=\"white-space:nowrap\">chronic-remission<a name=\"therapy-stop-reason-chronic-remission\"> </a></td><td>Chronic remission</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"therapy-stop-reason-other\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"therapy-stop-reason-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "TherapyStopReason"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-07T12:49:11+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "TBI-UKT"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "TBI-UKT" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://kohlbacherlab.org" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "patient-wish" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Patient wish" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "progression" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Progression" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "toxicity" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Toxicity" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "deterioration" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Deterioration" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "chronic-remission" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chronic remission" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "TumorSpecimenCollectionMethod",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://bwhc.de/mtb/tumor-specimen/collection-method</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">biopsy<a name=\"TumorSpecimenCollectionMethod-biopsy\"> </a></td><td>Biopsy</td></tr><tr><td style=\"white-space:nowrap\">resection<a name=\"TumorSpecimenCollectionMethod-resection\"> </a></td><td>Resection</td></tr><tr><td style=\"white-space:nowrap\">liquid-biopsy<a name=\"TumorSpecimenCollectionMethod-liquid-biopsy\"> </a></td><td>Liquid biopsy</td></tr><tr><td style=\"white-space:nowrap\">cytology<a name=\"TumorSpecimenCollectionMethod-cytology\"> </a></td><td>Cytology</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"TumorSpecimenCollectionMethod-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url": "http://bwhc.de/mtb/tumor-specimen/collection-method",
+  "version": "0.1.0",
+  "name": "TumorSpecimenCollectionMethod",
+  "status": "active",
+  "date": "2022-10-07T12:49:11+02:00",
+  "publisher": "TBI-UKT",
+  "contact": [
+    {
+      "name": "TBI-UKT",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://kohlbacherlab.org"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "biopsy",
+      "display": "Biopsy"
+    },
+    {
+      "code": "resection",
+      "display": "Resection"
+    },
+    {
+      "code": "liquid-biopsy",
+      "display": "Liquid biopsy"
+    },
+    {
+      "code": "cytology",
+      "display": "Cytology"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    }
+  ]
+}

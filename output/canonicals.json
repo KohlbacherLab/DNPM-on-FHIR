@@ -1,0 +1,289 @@
+[
+  {
+    "id": "TumorSpecimenCollectionMethod",
+    "type": "CodeSystem",
+    "url": "http://bwhc.de/mtb/tumor-specimen/collection-method",
+    "version": "0.1.0",
+    "name": "TumorSpecimenCollectionMethod"
+  },
+  {
+    "id": "TumorSpecimenLocalization",
+    "type": "CodeSystem",
+    "url": "http://bwhc.de/mtb/tumor-specimen/localization",
+    "version": "0.1.0",
+    "name": "TumorSpecimenLocalization"
+  },
+  {
+    "id": "TumorSpecimenType",
+    "type": "CodeSystem",
+    "url": "http://bwhc.de/mtb/tumor-specimen/type",
+    "version": "0.1.0",
+    "name": "TumorSpecimenType"
+  },
+  {
+    "id": "RECIST",
+    "type": "CodeSystem",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST",
+    "version": "0.1.0",
+    "name": "RECIST"
+  },
+  {
+    "id": "TumorCellContentMethod",
+    "type": "CodeSystem",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorCellContentMethod",
+    "version": "0.1.0",
+    "name": "TumorCellContentMethod"
+  },
+  {
+    "id": "TumorStage",
+    "type": "CodeSystem",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage",
+    "version": "0.1.0",
+    "name": "TumorStage"
+  },
+  {
+    "id": "WHOCNSGrading",
+    "type": "CodeSystem",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/WHOCNSGrading",
+    "version": "0.1.0",
+    "name": "WHOCNSGrading"
+  },
+  {
+    "id": "guideline-treatment-status-codes",
+    "type": "CodeSystem",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes",
+    "version": "0.1.0",
+    "name": "GuidelineTreatmentStatusCodes"
+  },
+  {
+    "id": "therapy-stop-reason",
+    "type": "CodeSystem",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/therapy-stop-reason",
+    "version": "0.1.0",
+    "name": "TherapyStopReason"
+  },
+  {
+    "id": "dnpm.kds",
+    "type": "ImplementationGuide",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ImplementationGuide/dnpm.kds",
+    "version": "0.1.0",
+    "name": "DNPMonFHIR"
+  },
+  {
+    "id": "ATCMedication",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/ATCMedication",
+    "version": "0.1.0",
+    "name": "ATCMedication"
+  },
+  {
+    "id": "BasicObservation",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/BasicObservation",
+    "version": "0.1.0",
+    "name": "BasicObservation"
+  },
+  {
+    "id": "ECOGPerformanceStatus",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/ECOGPerformanceStatus",
+    "version": "0.1.0",
+    "name": "ECOGPerformanceStatus"
+  },
+  {
+    "id": "GuidelineTherapy",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTherapy",
+    "version": "0.1.0",
+    "name": "GuidelineTherapy"
+  },
+  {
+    "id": "GuidelineTreatmentStatus",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTreatmentStatus",
+    "version": "0.1.0",
+    "name": "GuidelineTreatmentStatus"
+  },
+  {
+    "id": "HistologyReport",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/HistologyReport",
+    "version": "0.1.0",
+    "name": "HistologyReport"
+  },
+  {
+    "id": "LastGuidelineTherapy",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/LastGuidelineTherapy",
+    "version": "0.1.0",
+    "name": "LastGuidelineTherapy"
+  },
+  {
+    "id": "MTBFile",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/MTBFile",
+    "version": "0.1.0",
+    "name": "MTBFile"
+  },
+  {
+    "id": "Response",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/Response",
+    "version": "0.1.0",
+    "name": "Response"
+  },
+  {
+    "id": "TherapyLine",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TherapyLine",
+    "version": "0.1.0",
+    "name": "TherapyLine"
+  },
+  {
+    "id": "TumorCellContent",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorCellContent",
+    "version": "0.1.0",
+    "name": "TumorCellContent"
+  },
+  {
+    "id": "TumorMorphology",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorMorphology",
+    "version": "0.1.0",
+    "name": "TumorMorphology"
+  },
+  {
+    "id": "TumorSpecimen",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorSpecimen",
+    "version": "0.1.0",
+    "name": "TumorSpecimen"
+  },
+  {
+    "id": "TumorStageDate",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorStageDate",
+    "version": "0.1.0",
+    "name": "TumorStageDate"
+  },
+  {
+    "id": "dnpm-consent",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/dnpm-consent",
+    "version": "0.1.0",
+    "name": "DNPMConsent"
+  },
+  {
+    "id": "family-member-history",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/family-member-history",
+    "version": "0.1.0",
+    "name": "Family_Member_History"
+  },
+  {
+    "id": "mtb-episode",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-episode",
+    "version": "0.1.0",
+    "name": "MTBEpisode"
+  },
+  {
+    "id": "mtb-patient",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-patient",
+    "version": "0.1.0",
+    "name": "MTBPatient"
+  },
+  {
+    "id": "onco-diagnosis",
+    "type": "StructureDefinition",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/onco-diagnosis",
+    "version": "0.1.0",
+    "name": "OncoDiagnosis"
+  },
+  {
+    "id": "BasicFamilyMemberVS",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/BasicFamilyMemberVS",
+    "version": "0.1.0",
+    "name": "BasicFamilyMemberVS"
+  },
+  {
+    "id": "RECISTVS",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/RECISTVS",
+    "version": "0.1.0",
+    "name": "RECISTVS"
+  },
+  {
+    "id": "TherapyStopReasonVS",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TherapyStopReasonVS",
+    "version": "0.1.0",
+    "name": "TherapyStopReasonVS"
+  },
+  {
+    "id": "TumorCellContentMethodVS",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorCellContentMethodVS",
+    "version": "0.1.0",
+    "name": "TumorCellContentMethodVS"
+  },
+  {
+    "id": "TumorSpecimenCollectionMethodVS",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenCollectionMethodVS",
+    "version": "0.1.0",
+    "name": "TumorSpecimenCollectionMethodVS"
+  },
+  {
+    "id": "TumorSpecimenLocalizationVS",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenLocalizationVS",
+    "version": "0.1.0",
+    "name": "TumorSpecimenLocalizationVS"
+  },
+  {
+    "id": "TumorSpecimenTypeVS",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorSpecimenTypeVS",
+    "version": "0.1.0",
+    "name": "TumorSpecimenTypeVS"
+  },
+  {
+    "id": "TumorStageVS",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorStageVS",
+    "version": "0.1.0",
+    "name": "TumorStageVS"
+  },
+  {
+    "id": "WHOCNSGradingVS",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/WHOCNSGradingVS",
+    "version": "0.1.0",
+    "name": "WHOCNSGradingVS"
+  },
+  {
+    "id": "guideline-treatment-status-codes-valueset",
+    "type": "ValueSet",
+    "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/guideline-treatment-status-codes-valueset",
+    "version": "0.1.0",
+    "name": "GuidelineTreatmentStatusCodesVS"
+  },
+  {
+    "id": "ICDO3M",
+    "type": "ValueSet",
+    "url": "urn:oid:2.16.840.1.113883.6.43.1/topography",
+    "version": "0.1.0",
+    "name": "ICDO3Morphology"
+  },
+  {
+    "id": "ICDO3T",
+    "type": "ValueSet",
+    "url": "urn:oid:2.16.840.1.113883.6.43.1/topography",
+    "version": "0.1.0",
+    "name": "ICDO3Topography"
+  }
+]

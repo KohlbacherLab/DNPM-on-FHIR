@@ -1,0 +1,19 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-TumorMorphology-validation</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>StructureDefinition/TumorMorphology: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]</td><td>The code &quot;tumor-morphology&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-morphology) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#tumor-morphology'</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>StructureDefinition/TumorMorphology: StructureDefinition.snapshot.element[22].binding.valueSet</td><td>OIDs must be valid (2.16.840.1.113883.6.43.1/morphology)</td><td></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>StructureDefinition/TumorMorphology: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]</td><td>The code &quot;tumor-morphology&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-morphology) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://loinc.org#tumor-morphology'</td><td></td></tr>
+<tr><td>error</td><td>invalid</td><td>StructureDefinition/TumorMorphology: StructureDefinition.differential.element[5].binding.valueSet</td><td>OIDs must be valid (2.16.840.1.113883.6.43.1/morphology)</td><td></td></tr>
+<tr><td>warning</td><td>business-rule</td><td>StructureDefinition/TumorMorphology: StructureDefinition.differential.element[5].binding</td><td>The valueSet reference urn:oid:2.16.840.1.113883.6.43.1/morphology on element Observation.valueCodeableConcept could not be resolved</td><td></td></tr>
+<tr><td>warning</td><td>business-rule</td><td>StructureDefinition/TumorMorphology: StructureDefinition.snapshot.element[22].binding</td><td>The valueSet reference urn:oid:2.16.840.1.113883.6.43.1/morphology on element Observation.value[x] could not be resolved</td><td></td></tr>
+<tr><td>warning</td><td>business-rule</td><td>StructureDefinition.where(url = 'https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorMorphology')</td><td>The Implementation Guide contains no examples for this profile</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>StructureDefinition/TumorMorphology: StructureDefinition</td><td>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</td><td></td></tr>
+</table>
+</body>
+</html>

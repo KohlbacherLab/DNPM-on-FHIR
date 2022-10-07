@@ -1,0 +1,12 @@
+{
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ImplementationGuide/dnpm.kds",
+  "name": "DNPMonFHIR",
+  "package-id": "dnpm.kds",
+  "ig-ver": "0.1.0",
+  "date": "Fri, 07 Oct, 2022 12:49:11 +0200",
+  "errs": 21,
+  "warnings": 125,
+  "hints": 9,
+  "version": "4.0.1",
+  "tool": "5.0.0-ballot (3)"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ICDO3M"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <code>urn:oid:2.16.840.1.113883.6.43.1</code> where concept  descends from  M and concept  matches (by regex)  \d{4}:\d{1}</li></ul></div>
+  </text>
+  <url value="urn:oid:2.16.840.1.113883.6.43.1/topography"/>
+  <version value="0.1.0"/>
+  <name value="ICDO3Morphology"/>
+  <title value="ICD-O-3-Morphology"/>
+  <status value="active"/>
+  <date value="2022-10-07T12:49:11+02:00"/>
+  <publisher value="TBI-UKT"/>
+  <contact>
+    <name value="TBI-UKT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://kohlbacherlab.org"/>
+    </telecom>
+  </contact>
+  <description value="ICD-O-3 Morphology codes with ClaML kind = 'category' (hence the regex filter for pattern ****:*)"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.6.43.1"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="M"/>
+      </filter>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="\d{4}:\d{1}"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

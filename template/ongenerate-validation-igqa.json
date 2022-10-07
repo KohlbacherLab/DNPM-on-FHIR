@@ -1,0 +1,65 @@
+
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ATCMedication.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[0]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BasicObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[1]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dnpm-consent.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[2]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ECOGPerformanceStatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[3]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/GuidelineTherapy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[5]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/HistologyReport.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[6]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/LastGuidelineTherapy.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[7]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MTBFile.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[9]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Response.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[12]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TumorCellContent.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[13]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TumorMorphology.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[14]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TumorSpecimen.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[15]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/GuidelineTreatmentStatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[16]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TherapyLine.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[17]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TumorStageDate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[18]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/BasicFamilyMemberVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[19]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/RECISTVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[23]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TherapyStopReasonVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[24]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorCellContentMethodVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[25]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorSpecimenCollectionMethodVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[26]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorSpecimenLocalizationVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[27]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorSpecimenTypeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[28]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TumorStageVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[29]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/WHOCNSGradingVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[30]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/RECIST.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[32]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/therapy-stop-reason.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[33]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorCellContentMethod.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[34]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorSpecimenCollectionMethod.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[35]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorSpecimenLocalization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[36]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorSpecimenType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[37]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TumorStage.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[38]"]}
+,
+{"severity":"warning","code":"invariant","details":{"text":"Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/WHOCNSGrading.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list."},"location":["ImplementationGuide.definition.resource[39]"]}
+,

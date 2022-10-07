@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.6.43.1",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "M"
+      },
+      {
+        "property" : "concept",
+        "op" : "regex",
+        "value" : "\\d{4}:\\d{1}"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.43.1"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "urn:oid:2.16.840.1.113883.6.43.1/topography", "version": "0.1.0"}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.43.1"
+}
+-------------------------------------------------------------------------------------

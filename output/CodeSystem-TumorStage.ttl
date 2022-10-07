@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "TumorStage"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">tumor-free<a name=\"TumorStage-tumor-free\"> </a></td><td>Tumor-free</td></tr><tr><td style=\"white-space:nowrap\">local<a name=\"TumorStage-local\"> </a></td><td>Local</td></tr><tr><td style=\"white-space:nowrap\">metastasized<a name=\"TumorStage-metastasized\"> </a></td><td>Metastasized</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"TumorStage-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "TumorStage"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-07T12:49:11+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "TBI-UKT"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "TBI-UKT" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://kohlbacherlab.org" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "tumor-free" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tumor-free" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "local" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Local" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "metastasized" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Metastasized" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HistologyReport",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/HistologyReport",
+  "version": "0.1.0",
+  "name": "HistologyReport",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.contained",
+        "path": "DiagnosticReport.contained",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DiagnosticReport.contained:tumorCellContent",
+        "path": "DiagnosticReport.contained",
+        "sliceName": "tumorCellContent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorCellContent"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.contained:tumorMorphology",
+        "path": "DiagnosticReport.contained",
+        "sliceName": "tumorMorphology",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorMorphology"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.identifier",
+        "path": "DiagnosticReport.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.specimen",
+        "path": "DiagnosticReport.specimen",
+        "min": 1,
+        "max": "1"
+      }
+    ]
+  }
+}

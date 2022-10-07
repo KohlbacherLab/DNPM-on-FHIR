@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TumorSpecimenCollectionMethod",
+  "id": "TumorSpecimenCollectionMethod",
+  "version": "0.1.0",
+  "url": "http://bwhc.de/mtb/tumor-specimen/collection-method",
+  "concept": [
+    {
+      "code": "biopsy",
+      "display": "Biopsy"
+    },
+    {
+      "code": "resection",
+      "display": "Resection"
+    },
+    {
+      "code": "liquid-biopsy",
+      "display": "Liquid biopsy"
+    },
+    {
+      "code": "cytology",
+      "display": "Cytology"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    }
+  ],
+  "count": 5
+}

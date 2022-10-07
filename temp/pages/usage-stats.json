@@ -1,0 +1,165 @@
+{
+  "package": "dnpm.kds",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTreatmentStatus",
+      "title": "GuidelineTreatmentStatus",
+      "types": [
+        "Coding",
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TherapyLine",
+      "title": "TherapyLine",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorStageDate",
+      "title": "TumorStageDate",
+      "types": [
+        "date"
+      ]
+    }
+  ],
+  "profiles": {
+    "Medication": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/ATCMedication",
+        "title": "ATCMedication"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/Response",
+        "title": "Response"
+      },
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorCellContent",
+        "title": "TumorCellContent"
+      },
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorMorphology",
+        "title": "TumorMorphology"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/LastGuidelineTherapy",
+        "title": "LastGuidelineTherapy"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/HistologyReport",
+        "title": "HistologyReport"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/MTBFile",
+        "title": "MTBFile"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorSpecimen",
+        "title": "TumorSpecimen"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/dnpm-consent",
+        "title": "DNPM Consent"
+      }
+    ],
+    "FamilyMemberHistory": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/family-member-history",
+        "title": "Family Member History"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-episode",
+        "title": "Episode of Care"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/mtb-patient",
+        "title": "MTB Patient"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/onco-diagnosis",
+        "title": "Onco Diagnosis"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/GuidelineTreatmentStatus": [
+      "Condition"
+    ],
+    "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TherapyLine": [
+      "MedicationStatement"
+    ],
+    "https://github.com/KohlbacherLab/DNPM-on-FHIR/StructureDefinition/TumorStageDate": [
+      "Condition.stage"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='family-member-history' %}
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='family-member-history' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{modelType}}: Family_Member_History - Change History</h2>
+{% include fragment-simpletable.html %}
+  <p>Changes in the family-member-history {{modelType | downcase}}.</p>
+
+  {%include StructureDefinition-family-member-history-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

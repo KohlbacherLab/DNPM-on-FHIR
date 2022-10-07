@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="TumorSpecimenType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://bwhc.de/mtb/tumor-specimen/type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">fresh-tissue<a name="TumorSpecimenType-fresh-tissue"> </a></td><td>Fresh tissue</td></tr><tr><td style="white-space:nowrap">cryo-frozen<a name="TumorSpecimenType-cryo-frozen"> </a></td><td>Cryo-frozen</td></tr><tr><td style="white-space:nowrap">liquid-biopsy<a name="TumorSpecimenType-liquid-biopsy"> </a></td><td>Liquid biopsy</td></tr><tr><td style="white-space:nowrap">FFPE<a name="TumorSpecimenType-FFPE"> </a></td><td>FFPE</td></tr><tr><td style="white-space:nowrap">unknown<a name="TumorSpecimenType-unknown"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="http://bwhc.de/mtb/tumor-specimen/type"/>
+  <version value="0.1.0"/>
+  <name value="TumorSpecimenType"/>
+  <status value="active"/>
+  <date value="2022-10-07T12:49:11+02:00"/>
+  <publisher value="TBI-UKT"/>
+  <contact>
+    <name value="TBI-UKT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://kohlbacherlab.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="fresh-tissue"/>
+    <display value="Fresh tissue"/>
+  </concept>
+  <concept>
+    <code value="cryo-frozen"/>
+    <display value="Cryo-frozen"/>
+  </concept>
+  <concept>
+    <code value="liquid-biopsy"/>
+    <display value="Liquid biopsy"/>
+  </concept>
+  <concept>
+    <code value="FFPE"/>
+    <display value="FFPE"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

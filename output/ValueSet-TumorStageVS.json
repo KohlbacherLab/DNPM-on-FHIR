@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "TumorStageVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-TumorStage.html\"><code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage</code></a></li></ul></div>"
+  },
+  "url": "https://github.com/KohlbacherLab/DNPM-on-FHIR/ValueSet/TumorStageVS",
+  "version": "0.1.0",
+  "name": "TumorStageVS",
+  "status": "active",
+  "date": "2022-10-07T12:49:11+02:00",
+  "publisher": "TBI-UKT",
+  "contact": [
+    {
+      "name": "TBI-UKT",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://kohlbacherlab.org"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/TumorStage"
+      }
+    ]
+  }
+}

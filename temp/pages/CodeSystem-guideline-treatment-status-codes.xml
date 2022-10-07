@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="guideline-treatment-status-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">exhausted<a name="guideline-treatment-status-codes-exhausted"> </a></td><td>Exhausted</td></tr><tr><td style="white-space:nowrap">non-exhausted<a name="guideline-treatment-status-codes-non-exhausted"> </a></td><td>Non-extausted</td></tr><tr><td style="white-space:nowrap">impossible<a name="guideline-treatment-status-codes-impossible"> </a></td><td>Impossible</td></tr><tr><td style="white-space:nowrap">no-guidelines-available<a name="guideline-treatment-status-codes-no-guidelines-available"> </a></td><td>No guidelines available</td></tr><tr><td style="white-space:nowrap">unknown<a name="guideline-treatment-status-codes-unknown"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/guideline-treatment-status-codes"/>
+  <version value="0.1.0"/>
+  <name value="GuidelineTreatmentStatusCodes"/>
+  <title value="Guideline Treatment Status Codes"/>
+  <status value="active"/>
+  <date value="2022-10-07T12:49:11+02:00"/>
+  <publisher value="TBI-UKT"/>
+  <contact>
+    <name value="TBI-UKT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://kohlbacherlab.org"/>
+    </telecom>
+  </contact>
+  <description value="Status codes of guideline treatment of tumor disease"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="exhausted"/>
+    <display value="Exhausted"/>
+  </concept>
+  <concept>
+    <code value="non-exhausted"/>
+    <display value="Non-extausted"/>
+  </concept>
+  <concept>
+    <code value="impossible"/>
+    <display value="Impossible"/>
+  </concept>
+  <concept>
+    <code value="no-guidelines-available"/>
+    <display value="No guidelines available"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

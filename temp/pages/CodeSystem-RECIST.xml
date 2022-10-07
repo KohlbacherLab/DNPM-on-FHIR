@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="RECIST"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CR<a name="RECIST-CR"> </a></td><td>Complete Response</td></tr><tr><td style="white-space:nowrap">PR<a name="RECIST-PR"> </a></td><td>Partial Response</td></tr><tr><td style="white-space:nowrap">MR<a name="RECIST-MR"> </a></td><td>Mixed Response</td></tr><tr><td style="white-space:nowrap">SD<a name="RECIST-SD"> </a></td><td>Stable Disease</td></tr><tr><td style="white-space:nowrap">PD<a name="RECIST-PD"> </a></td><td>Progressive Disease</td></tr><tr><td style="white-space:nowrap">NA<a name="RECIST-NA"> </a></td><td>Not Assessable</td></tr><tr><td style="white-space:nowrap">NYA<a name="RECIST-NYA"> </a></td><td>Not Yet Assessable</td></tr></table></div>
+  </text>
+  <url value="https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"/>
+  <version value="0.1.0"/>
+  <name value="RECIST"/>
+  <status value="active"/>
+  <date value="2022-10-07T12:49:11+02:00"/>
+  <publisher value="TBI-UKT"/>
+  <contact>
+    <name value="TBI-UKT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://kohlbacherlab.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="CR"/>
+    <display value="Complete Response"/>
+  </concept>
+  <concept>
+    <code value="PR"/>
+    <display value="Partial Response"/>
+  </concept>
+  <concept>
+    <code value="MR"/>
+    <display value="Mixed Response"/>
+  </concept>
+  <concept>
+    <code value="SD"/>
+    <display value="Stable Disease"/>
+  </concept>
+  <concept>
+    <code value="PD"/>
+    <display value="Progressive Disease"/>
+  </concept>
+  <concept>
+    <code value="NA"/>
+    <display value="Not Assessable"/>
+  </concept>
+  <concept>
+    <code value="NYA"/>
+    <display value="Not Yet Assessable"/>
+  </concept>
+</CodeSystem>

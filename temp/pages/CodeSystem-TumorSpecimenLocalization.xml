@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="TumorSpecimenLocalization"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://bwhc.de/mtb/tumor-specimen/localization</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">primary-tumor<a name="TumorSpecimenLocalization-primary-tumor"> </a></td><td>Primary tumor</td></tr><tr><td style="white-space:nowrap">metastasis<a name="TumorSpecimenLocalization-metastasis"> </a></td><td>Metastasis</td></tr><tr><td style="white-space:nowrap">unknown<a name="TumorSpecimenLocalization-unknown"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="http://bwhc.de/mtb/tumor-specimen/localization"/>
+  <version value="0.1.0"/>
+  <name value="TumorSpecimenLocalization"/>
+  <status value="active"/>
+  <date value="2022-10-07T12:49:11+02:00"/>
+  <publisher value="TBI-UKT"/>
+  <contact>
+    <name value="TBI-UKT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://kohlbacherlab.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="primary-tumor"/>
+    <display value="Primary tumor"/>
+  </concept>
+  <concept>
+    <code value="metastasis"/>
+    <display value="Metastasis"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

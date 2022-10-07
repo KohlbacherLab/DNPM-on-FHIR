@@ -1,0 +1,338 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2>
+<hr/><a name="l1"> </a>
+<p>#1</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.6.43.1&quot;,&quot;code&quot;:&quot;M&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:395
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:49:19 GMT
+last-modified:Fri, 07 Oct 2022 10:49:18 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:42-2425952
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code system 'urn:oid:2.16.840.1.113883.6.43.1' is not known (encountered paired with code = 'M'); The code provided (urn:oid:2.16.840.1.113883.6.43.1#M) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;not-found&quot;}]}
+</pre>
+<hr/><a name="l2"> </a>
+<p>#2</p>
+<pre>
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://loinc.org&quot;,&quot;code&quot;:&quot;5792-7&quot;}},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;url&quot;,&quot;valueString&quot;:&quot;http://fhir.de/CodeSystem/bfarm/atc&quot;},{&quot;name&quot;:&quot;cache-id&quot;,&quot;valueString&quot;:&quot;99d23e2b-f581-4b59-a11b-ddc676b2dabf&quot;},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:2935
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:49:20 GMT
+server:nginx
+x-request-id:42-2425956
+
+{&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Unable to resolve value set \&quot;http://fhir.de/CodeSystem/bfarm/atc\&quot;&lt;/p&gt;&lt;/div&gt;&quot;},&quot;issue&quot; : [{&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-supported&quot;,&quot;details&quot; : {&quot;text&quot; : &quot;Unable to resolve value set \&quot;http://fhir.de/CodeSystem/bfarm/atc\&quot;&quot;},&quot;diagnostics&quot; : &quot;(00000000013DDE55){FHIRServer.exe} [00000000017DEE55] Unknown function at TMethodImplementationIntercept + $1337B55\r\n(000000000033D7AC){FHIRServer.exe} [000000000073E7AC] Unknown function at TMethodImplementationIntercept + $2974AC\r\n(000000000033F46E){FHIRServer.exe} [000000000074046E] Unknown function at TMethodImplementationIntercept + $29916E\r\n(000000000004B6F7){FHIRServer.exe} [000000000044C6F7] Unknown function at __dbk_fcall_wrapper + $2E2F7\r\n(000000000004BFEB){FHIRServer.exe} [000000000044CFEB] Unknown function at __dbk_fcall_wrapper + $2EBEB\r\n(0000000000011276){FHIRServer.exe} [0000000000412276]\r\n(00000000000112B1){FHIRServer.exe} [00000000004122B1]\r\n(00000000013DDE55){FHIRServer.exe} [00000000017DEE55] Unknown function at TMethodImplementationIntercept + $1337B55\r\n(00000000011587F2){FHIRServer.exe} [00000000015597F2] Unknown function at TMethodImplementationIntercept + $10B24F2\r\n(0000000001150BC7){FHIRServer.exe} [0000000001551BC7] Unknown function at TMethodImplementationIntercept + $10AA8C7\r\n(00000000023509CA){FHIRServer.exe} [00000000027519CA] Unknown function at TMethodImplementationIntercept + $22AA6CA\r\n(000000000234D561){FHIRServer.exe} [000000000274E561] Unknown function at TMethodImplementationIntercept + $22A7261\r\n(0000000002348313){FHIRServer.exe} [0000000002749313] Unknown function at TMethodImplementationIntercept + $22A2013\r\n(0000000006CAD3CF){FHIRServer.exe} [00000000070AE3CF] Unknown function at TMethodImplementationIntercept + $6C070CF\r\n(000000000025CA0C){FHIRServer.exe} [000000000065DA0C] Unknown function at TMethodImplementationIntercept + $1B670C\r\n(000000000025E666){FHIRServer.exe} [000000000065F666] Unknown function at TMethodImplementationIntercept + $1B8366\r\n(000000000023789E){FHIRServer.exe} [000000000063889E] Unknown function at TMethodImplementationIntercept + $19159E\r\n(0000000000235961){FHIRServer.exe} [0000000000636961] Unknown function at TMethodImplementationIntercept + $18F661\r\n(000000000023CE94){FHIRServer.exe} [000000000063DE94] Unknown function at TMethodImplementationIntercept + $196B94\r\n(000000000023BDBD){FHIRServer.exe} [000000000063CDBD] Unknown function at TMethodImplementationIntercept + $195ABD\r\n(0000000000138173){FHIRServer.exe} [0000000000539173] Unknown function at TMethodImplementationIntercept + $91E73\r\n(0000000000011E3D){FHIRServer.exe} [0000000000412E3D]\r\n(0000000000000412){KERNEL32.DLL} [00007FFFC4F21412] BaseThreadInitThunk + $22\r\n(0000000000014504){ntdll.dll   } [00007FFFC6B25504] RtlUserThreadStart + $34\r\n&quot;}]}
+</pre>
+<hr/><a name="l3"> </a>
+<p>#3</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://loinc.org&quot;,&quot;code&quot;:&quot;89247-1&quot;}},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:301
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:49:21 GMT
+last-modified:Fri, 07 Oct 2022 10:49:21 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:42-2425957
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;ECOG Performance Status score&quot;},{&quot;name&quot; : &quot;system&quot;,&quot;valueString&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueString&quot; : &quot;89247-1&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.73&quot;},{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true}]}
+</pre>
+<hr/><a name="l4"> </a>
+<p>#4</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://loinc.org&quot;,&quot;code&quot;:&quot;21976-6&quot;}},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:293
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:49:22 GMT
+last-modified:Fri, 07 Oct 2022 10:49:22 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:42-2425958
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Cancer outcome status&quot;},{&quot;name&quot; : &quot;system&quot;,&quot;valueString&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueString&quot; : &quot;21976-6&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.73&quot;},{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true}]}
+</pre>
+<hr/><a name="l5"> </a>
+<p>#5</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://loinc.org&quot;,&quot;code&quot;:&quot;tumor-content&quot;}},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:359
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:49:23 GMT
+last-modified:Fri, 07 Oct 2022 10:49:23 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:42-2425959
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code \&quot;tumor-content\&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-content) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;invalid&quot;}]}
+</pre>
+<hr/><a name="l6"> </a>
+<p>#6</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://loinc.org&quot;,&quot;code&quot;:&quot;tumor-morphology&quot;}},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:365
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:49:23 GMT
+last-modified:Fri, 07 Oct 2022 10:49:23 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:42-2425960
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code \&quot;tumor-morphology\&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-morphology) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;invalid&quot;}]}
+</pre>
+<hr/><a name="l7"> </a>
+<p>#7</p>
+<pre>
+POST http://tx.fhir.org/r4/ValueSet/$expand?_limit=1000&_incomplete=true HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;},{&quot;name&quot;:&quot;includeDefinition&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;excludeNested&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;valueSet&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;ValueSet&quot;,&quot;status&quot;:&quot;active&quot;,&quot;compose&quot;:{&quot;inactive&quot;:true,&quot;include&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.6.43.1&quot;,&quot;filter&quot;:[{&quot;property&quot;:&quot;concept&quot;,&quot;op&quot;:&quot;descendent-of&quot;,&quot;value&quot;:&quot;M&quot;},{&quot;property&quot;:&quot;concept&quot;,&quot;op&quot;:&quot;regex&quot;,&quot;value&quot;:&quot;\\d{4}:\\d{1}&quot;}]}]}}},{&quot;name&quot;:&quot;_limit&quot;,&quot;valueString&quot;:&quot;1000&quot;},{&quot;name&quot;:&quot;_incomplete&quot;,&quot;valueString&quot;:&quot;true&quot;}]}
+</pre>
+<pre>
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:3656
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:49:57 GMT
+server:nginx
+x-request-id:42-2425976
+
+{&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Unable to provide support for code system urn:oid:2.16.840.1.113883.6.43.1&lt;/p&gt;&lt;/div&gt;&quot;},&quot;issue&quot; : [{&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-supported&quot;,&quot;details&quot; : {&quot;text&quot; : &quot;Unable to provide support for code system urn:oid:2.16.840.1.113883.6.43.1&quot;},&quot;diagnostics&quot; : &quot;(0000000000ECECED){FHIRServer.exe} [00000000012CFCED] Unknown function at TMethodImplementationIntercept + $E289ED\r\n(000000000033D7AC){FHIRServer.exe} [000000000073E7AC] Unknown function at TMethodImplementationIntercept + $2974AC\r\n(000000000033F46E){FHIRServer.exe} [000000000074046E] Unknown function at TMethodImplementationIntercept + $29916E\r\n(000000000004B6F7){FHIRServer.exe} [000000000044C6F7] Unknown function at __dbk_fcall_wrapper + $2E2F7\r\n(000000000004BFEB){FHIRServer.exe} [000000000044CFEB] Unknown function at __dbk_fcall_wrapper + $2EBEB\r\n(0000000000011276){FHIRServer.exe} [0000000000412276]\r\n(00000000000112B1){FHIRServer.exe} [00000000004122B1]\r\n(0000000000ECECED){FHIRServer.exe} [00000000012CFCED] Unknown function at TMethodImplementationIntercept + $E289ED\r\n(0000000000EDAEDE){FHIRServer.exe} [00000000012DBEDE] Unknown function at TMethodImplementationIntercept + $E34BDE\r\n(0000000000ED861B){FHIRServer.exe} [00000000012D961B] Unknown function at TMethodImplementationIntercept + $E3231B\r\n(0000000000ED72AF){FHIRServer.exe} [00000000012D82AF] Unknown function at TMethodImplementationIntercept + $E30FAF\r\n(000000000109CE14){FHIRServer.exe} [000000000149DE14] Unknown function at TMethodImplementationIntercept + $FF6B14\r\n(000000000109C5C4){FHIRServer.exe} [000000000149D5C4] Unknown function at TMethodImplementationIntercept + $FF62C4\r\n(00000000013DCA77){FHIRServer.exe} [00000000017DDA77] Unknown function at TMethodImplementationIntercept + $1336777\r\n(00000000011587F2){FHIRServer.exe} [00000000015597F2] Unknown function at TMethodImplementationIntercept + $10B24F2\r\n(0000000001150BC7){FHIRServer.exe} [0000000001551BC7] Unknown function at TMethodImplementationIntercept + $10AA8C7\r\n(00000000023509CA){FHIRServer.exe} [00000000027519CA] Unknown function at TMethodImplementationIntercept + $22AA6CA\r\n(000000000234D561){FHIRServer.exe} [000000000274E561] Unknown function at TMethodImplementationIntercept + $22A7261\r\n(0000000002348313){FHIRServer.exe} [0000000002749313] Unknown function at TMethodImplementationIntercept + $22A2013\r\n(0000000006CAD3CF){FHIRServer.exe} [00000000070AE3CF] Unknown function at TMethodImplementationIntercept + $6C070CF\r\n(000000000025CA0C){FHIRServer.exe} [000000000065DA0C] Unknown function at TMethodImplementationIntercept + $1B670C\r\n(000000000025E666){FHIRServer.exe} [000000000065F666] Unknown function at TMethodImplementationIntercept + $1B8366\r\n(000000000023789E){FHIRServer.exe} [000000000063889E] Unknown function at TMethodImplementationIntercept + $19159E\r\n(0000000000235961){FHIRServer.exe} [0000000000636961] Unknown function at TMethodImplementationIntercept + $18F661\r\n(000000000023CE94){FHIRServer.exe} [000000000063DE94] Unknown function at TMethodImplementationIntercept + $196B94\r\n(000000000023BDBD){FHIRServer.exe} [000000000063CDBD] Unknown function at TMethodImplementationIntercept + $195ABD\r\n(0000000000138173){FHIRServer.exe} [0000000000539173] Unknown function at TMethodImplementationIntercept + $91E73\r\n(0000000000011E3D){FHIRServer.exe} [0000000000412E3D]\r\n(0000000000000412){KERNEL32.DLL} [00007FFFC4F21412] BaseThreadInitThunk + $22\r\n(0000000000014504){ntdll.dll   } [00007FFFC6B25504] RtlUserThreadStart + $34\r\n&quot;}]}
+</pre>
+<hr/><a name="l8"> </a>
+<p>#8</p>
+<pre>
+POST http://tx.fhir.org/r4/ValueSet/$expand?_limit=1000&_incomplete=true HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;},{&quot;name&quot;:&quot;includeDefinition&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;excludeNested&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;incomplete-ok&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;valueSet&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;ValueSet&quot;,&quot;id&quot;:&quot;ICDO3M&quot;,&quot;text&quot;:{&quot;status&quot;:&quot;generated&quot;,&quot;div&quot;:&quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include codes from &lt;code&gt;urn:oid:2.16.840.1.113883.6.43.1&lt;/code&gt; where concept  descends from  M and concept  matches (by regex)  \\d{4}:\\d{1}&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;},&quot;url&quot;:&quot;urn:oid:2.16.840.1.113883.6.43.1/topography&quot;,&quot;version&quot;:&quot;0.1.0&quot;,&quot;name&quot;:&quot;ICDO3Morphology&quot;,&quot;title&quot;:&quot;ICD-O-3-Morphology&quot;,&quot;status&quot;:&quot;active&quot;,&quot;date&quot;:&quot;2022-10-07T12:49:11+02:00&quot;,&quot;publisher&quot;:&quot;TBI-UKT&quot;,&quot;contact&quot;:[{&quot;name&quot;:&quot;TBI-UKT&quot;,&quot;telecom&quot;:[{&quot;system&quot;:&quot;url&quot;,&quot;value&quot;:&quot;https://kohlbacherlab.org&quot;}]}],&quot;description&quot;:&quot;ICD-O-3 Morphology codes with ClaML kind = 'category' (hence the regex filter for pattern ****:*)&quot;,&quot;compose&quot;:{&quot;include&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.6.43.1&quot;,&quot;filter&quot;:[{&quot;property&quot;:&quot;concept&quot;,&quot;op&quot;:&quot;descendent-of&quot;,&quot;value&quot;:&quot;M&quot;},{&quot;property&quot;:&quot;concept&quot;,&quot;op&quot;:&quot;regex&quot;,&quot;value&quot;:&quot;\\d{4}:\\d{1}&quot;}]}]}}},{&quot;name&quot;:&quot;_limit&quot;,&quot;valueString&quot;:&quot;1000&quot;},{&quot;name&quot;:&quot;_incomplete&quot;,&quot;valueString&quot;:&quot;true&quot;}]}
+</pre>
+<pre>
+422
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+connection:keep-alive
+content-length:3656
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:49:57 GMT
+server:nginx
+x-request-id:42-2425979
+
+{&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Unable to provide support for code system urn:oid:2.16.840.1.113883.6.43.1&lt;/p&gt;&lt;/div&gt;&quot;},&quot;issue&quot; : [{&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-supported&quot;,&quot;details&quot; : {&quot;text&quot; : &quot;Unable to provide support for code system urn:oid:2.16.840.1.113883.6.43.1&quot;},&quot;diagnostics&quot; : &quot;(0000000000ECECED){FHIRServer.exe} [00000000012CFCED] Unknown function at TMethodImplementationIntercept + $E289ED\r\n(000000000033D7AC){FHIRServer.exe} [000000000073E7AC] Unknown function at TMethodImplementationIntercept + $2974AC\r\n(000000000033F46E){FHIRServer.exe} [000000000074046E] Unknown function at TMethodImplementationIntercept + $29916E\r\n(000000000004B6F7){FHIRServer.exe} [000000000044C6F7] Unknown function at __dbk_fcall_wrapper + $2E2F7\r\n(000000000004BFEB){FHIRServer.exe} [000000000044CFEB] Unknown function at __dbk_fcall_wrapper + $2EBEB\r\n(0000000000011276){FHIRServer.exe} [0000000000412276]\r\n(00000000000112B1){FHIRServer.exe} [00000000004122B1]\r\n(0000000000ECECED){FHIRServer.exe} [00000000012CFCED] Unknown function at TMethodImplementationIntercept + $E289ED\r\n(0000000000EDAEDE){FHIRServer.exe} [00000000012DBEDE] Unknown function at TMethodImplementationIntercept + $E34BDE\r\n(0000000000ED861B){FHIRServer.exe} [00000000012D961B] Unknown function at TMethodImplementationIntercept + $E3231B\r\n(0000000000ED72AF){FHIRServer.exe} [00000000012D82AF] Unknown function at TMethodImplementationIntercept + $E30FAF\r\n(000000000109CE14){FHIRServer.exe} [000000000149DE14] Unknown function at TMethodImplementationIntercept + $FF6B14\r\n(000000000109C5C4){FHIRServer.exe} [000000000149D5C4] Unknown function at TMethodImplementationIntercept + $FF62C4\r\n(00000000013DCA77){FHIRServer.exe} [00000000017DDA77] Unknown function at TMethodImplementationIntercept + $1336777\r\n(00000000011587F2){FHIRServer.exe} [00000000015597F2] Unknown function at TMethodImplementationIntercept + $10B24F2\r\n(0000000001150BC7){FHIRServer.exe} [0000000001551BC7] Unknown function at TMethodImplementationIntercept + $10AA8C7\r\n(00000000023509CA){FHIRServer.exe} [00000000027519CA] Unknown function at TMethodImplementationIntercept + $22AA6CA\r\n(000000000234D561){FHIRServer.exe} [000000000274E561] Unknown function at TMethodImplementationIntercept + $22A7261\r\n(0000000002348313){FHIRServer.exe} [0000000002749313] Unknown function at TMethodImplementationIntercept + $22A2013\r\n(0000000006CAD3CF){FHIRServer.exe} [00000000070AE3CF] Unknown function at TMethodImplementationIntercept + $6C070CF\r\n(000000000025CA0C){FHIRServer.exe} [000000000065DA0C] Unknown function at TMethodImplementationIntercept + $1B670C\r\n(000000000025E666){FHIRServer.exe} [000000000065F666] Unknown function at TMethodImplementationIntercept + $1B8366\r\n(000000000023789E){FHIRServer.exe} [000000000063889E] Unknown function at TMethodImplementationIntercept + $19159E\r\n(0000000000235961){FHIRServer.exe} [0000000000636961] Unknown function at TMethodImplementationIntercept + $18F661\r\n(000000000023CE94){FHIRServer.exe} [000000000063DE94] Unknown function at TMethodImplementationIntercept + $196B94\r\n(000000000023BDBD){FHIRServer.exe} [000000000063CDBD] Unknown function at TMethodImplementationIntercept + $195ABD\r\n(0000000000138173){FHIRServer.exe} [0000000000539173] Unknown function at TMethodImplementationIntercept + $91E73\r\n(0000000000011E3D){FHIRServer.exe} [0000000000412E3D]\r\n(0000000000000412){KERNEL32.DLL} [00007FFFC4F21412] BaseThreadInitThunk + $22\r\n(0000000000014504){ntdll.dll   } [00007FFFC6B25504] RtlUserThreadStart + $34\r\n&quot;}]}
+</pre>
+<hr/><a name="l9"> </a>
+<p>#9</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://loinc.org&quot;,&quot;code&quot;:&quot;89247-1&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:301
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:50:00 GMT
+last-modified:Fri, 07 Oct 2022 10:49:59 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:42-2425981
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;ECOG Performance Status score&quot;},{&quot;name&quot; : &quot;system&quot;,&quot;valueString&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueString&quot; : &quot;89247-1&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.73&quot;},{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true}]}
+</pre>
+<hr/><a name="l10"> </a>
+<p>#10</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://loinc.org&quot;,&quot;code&quot;:&quot;21976-6&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:293
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:50:00 GMT
+last-modified:Fri, 07 Oct 2022 10:50:00 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:42-2425982
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Cancer outcome status&quot;},{&quot;name&quot; : &quot;system&quot;,&quot;valueString&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueString&quot; : &quot;21976-6&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.73&quot;},{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true}]}
+</pre>
+<hr/><a name="l11"> </a>
+<p>#11</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://loinc.org&quot;,&quot;code&quot;:&quot;tumor-content&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:359
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:50:00 GMT
+last-modified:Fri, 07 Oct 2022 10:50:00 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:42-2425984
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code \&quot;tumor-content\&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-content) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;invalid&quot;}]}
+</pre>
+<hr/><a name="l12"> </a>
+<p>#12</p>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;coding&quot;,&quot;valueCoding&quot;:{&quot;system&quot;:&quot;http://loinc.org&quot;,&quot;code&quot;:&quot;tumor-morphology&quot;}},{&quot;name&quot;:&quot;displayLanguage&quot;,&quot;valueString&quot;:&quot;en-US&quot;},{&quot;name&quot;:&quot;default-to-latest-version&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;profile&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:365
+content-type:application/fhir+json
+date:Fri, 07 Oct 2022 10:50:01 GMT
+last-modified:Fri, 07 Oct 2022 10:50:00 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:42-2425985
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;The code \&quot;tumor-morphology\&quot; is not valid in the system http://loinc.org; The code provided (http://loinc.org#tumor-morphology) is not valid in the value set 'All codes known to the system'&quot;},{&quot;name&quot; : &quot;cause&quot;,&quot;valueString&quot; : &quot;invalid&quot;}]}
+</pre>
+</head></html>

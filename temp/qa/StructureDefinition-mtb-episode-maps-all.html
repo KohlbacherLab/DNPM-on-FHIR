@@ -1,0 +1,125 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-mtb-episode-maps-all</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>MTBEpisode</b></td></tr>
+ <tr><td>EpisodeOfCare</td><td>Event</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;implicitRules</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;language</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;text</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Event.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;statusHistory</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>Event.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;diagnosis</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;condition</td><td>Event.reasonReference</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rank</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>Event.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;managingOrganization</td><td>Event.performer.actor</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>Event.occurrence[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;referralRequest</td><td>Event.basedOn</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;careManager</td><td>Event.performer.actor</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;team</td><td>Event.performer.actor</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;account</td><td></td> </tr>
+</table>
+<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>MTBEpisode</b></td></tr>
+ <tr><td>EpisodeOfCare</td><td>Entity. Role, or Act, n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;implicitRules</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;language</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;statusHistory</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;type</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;diagnosis</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;condition</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rank</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;managingOrganization</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td>./low</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td>./high</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;referralRequest</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;careManager</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;team</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;account</td><td></td> </tr>
+</table>
+<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
+ <tr><td colspan="3"><b>MTBEpisode</b></td></tr>
+ <tr><td>EpisodeOfCare</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;implicitRules</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;language</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;text</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;statusHistory</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>FiveWs.class</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;diagnosis</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;condition</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rank</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;managingOrganization</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>FiveWs.init</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;referralRequest</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;careManager</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;team</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;account</td><td></td> </tr>
+</table>
+</body>
+</html>

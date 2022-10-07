@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "RECIST"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CR<a name=\"RECIST-CR\"> </a></td><td>Complete Response</td></tr><tr><td style=\"white-space:nowrap\">PR<a name=\"RECIST-PR\"> </a></td><td>Partial Response</td></tr><tr><td style=\"white-space:nowrap\">MR<a name=\"RECIST-MR\"> </a></td><td>Mixed Response</td></tr><tr><td style=\"white-space:nowrap\">SD<a name=\"RECIST-SD\"> </a></td><td>Stable Disease</td></tr><tr><td style=\"white-space:nowrap\">PD<a name=\"RECIST-PD\"> </a></td><td>Progressive Disease</td></tr><tr><td style=\"white-space:nowrap\">NA<a name=\"RECIST-NA\"> </a></td><td>Not Assessable</td></tr><tr><td style=\"white-space:nowrap\">NYA<a name=\"RECIST-NYA\"> </a></td><td>Not Yet Assessable</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "RECIST"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-07T12:49:11+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "TBI-UKT"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "TBI-UKT" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://kohlbacherlab.org" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "CR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Complete Response" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "PR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Partial Response" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "MR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mixed Response" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "SD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stable Disease" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "PD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Progressive Disease" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "NA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Assessable" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "NYA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Yet Assessable" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://github.com/KohlbacherLab/DNPM-on-FHIR/CodeSystem/RECIST.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
